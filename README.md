@@ -47,6 +47,14 @@ VALORES: los campos que agreguemos los totaliza.
 - Modo enfoque
 - Más opciones
 
+### Ocultar campos
+
+ocultar campos que no vamos a utilizar en informes, por tanto, los campos que ocultemos no aparecerán en el panel de datos de la vista informe.
+
+### Cambiar la configuración predeterminada de un campo
+
+Para cambiar esta función predeterminada, los podemos hacer en cualquier vista, aunque lo más habitual suele ser en la vista tabla, basta con seleccionar el campo en el panel de datos e ir a la ficha HERRAMIENTAS DE COLUMNAS y en el grupo de botones PROPIEDADES seleccionamos la opción RESUMEN
+
 
 
 ## Importante
