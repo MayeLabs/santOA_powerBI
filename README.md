@@ -56,6 +56,28 @@ ocultar campos que no vamos a utilizar en informes, por tanto, los campos que oc
 Para cambiar esta función predeterminada, los podemos hacer en cualquier vista, aunque lo más habitual suele ser en la vista tabla, basta con seleccionar el campo en el panel de datos e ir a la ficha HERRAMIENTAS DE COLUMNAS y en el grupo de botones PROPIEDADES seleccionamos la opción RESUMEN
 
 
+### Formato de visualización
+VALORES PREESTABLECIDOS	
+Para poner bordes a las filas, columnas y contorno de la tabla.
+
+CUADRICULA	
+Para poner bordes a las filas, columnas y contorno de la tabla.
+
+VALORES	
+Para dar formato a los valores mostrados en la tabla.
+
+ENCABEZADOS DE COLUMNA	
+Para dar formato a los títulos de cada columna de la tabla.
+
+TOTALES	
+Para formatear la fila de totales de la tabla, mostrada siempre la última fila.
+
+COLUMNA ESPECIFICA	
+Para formatear una a una cada columna que hayamos agregado a la tabla.
+
+### Interación en los informes
+
+Todos los informes, sean del tipo que sean, que estén en una misma página, tienen  interacción. Es decir, seleccionando un dato quedan filtradas todas las visualizaciones de la página.
 
 ## Importante
 - La importación más recomendable es la de una tabla de datos.
@@ -127,4 +149,19 @@ SUMA DE IMPORTE CLIENTE: TOTAL CLIENTE
 FILA: CONCEPTO
 COLUMNA: TIPO
 VALORES: RECUENTO DE NUMERO FACTURA CLIENTE
+Guardar los cambios y cerrar el fichero.
+
+
+### Practica V
+
+Abrir el fichero de Power BI BD FACTURAS.
+Seleccionar la tabla de clientes y cambiar los siguientes formatos:
+Poner los encabezados en negrita y centrados.
+Poner los valores en cursiva.
+Poner en la fila de totales el texto: TOTALES CLIENTE
+Seleccionar la tabla de clientes y cambiar los siguientes formatos:
+Seleccionar la matriz y cambiar los siguientes formatos:
+Poner los encabezados de columna en negrita.
+Poner los encabezados de fila en negrita y cursiva.
+Filtrar los informes de la página por la provincia de ALICANTE.
 Guardar los cambios y cerrar el fichero.
