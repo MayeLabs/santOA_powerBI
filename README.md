@@ -42,3 +42,11 @@ Expandir los campos en el panel de datos
 Ir a la vista tabla
 Guardar el fichero con el nombre BD FACTURAS
 
+
+### Practica II
+
+El fichero de texto 07. BD FACTURAS tiene los mismos datos que el fichero 06. BD FACTURAS de Excel que hemos importado en la práctica anterior. Realiza las siguientes operaciones:
+Abrir un POWER BI en blanco
+Importar el fichero de texto 07. BD FACTURAS
+Ir a la vista tabla
+Guardar el fichero con el nombre BD FACTURAS TXT
