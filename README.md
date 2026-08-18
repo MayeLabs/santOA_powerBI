@@ -34,6 +34,19 @@ Podemos cambiar el tipo de dato de las columnas con tipo compatible, es decir, e
 
 #,##0” horas”
 
+## Informes en power BI
+
+#### Matriz
+
+FILAS: agrupa los campos que agreguemos mostrando cada elemento en una fila.
+COLUMNAS: agrupa los campos que agreguemos mostrando cada elemento en una columna.
+VALORES: los campos que agreguemos los totaliza.
+
+### Opciones de informes
+- Filtro
+- Modo enfoque
+- Más opciones
+
 
 
 ## Importante
@@ -77,3 +90,9 @@ Abrir un POWER BI en blanco
 Importar el fichero de texto 07. BD FACTURAS
 Ir a la vista tabla
 Guardar el fichero con el nombre BD FACTURAS TXT
+
+### Practica III
+
+Vamos a modificar el nombre de los otros dos campos de valores de la tabla:
+PROMEDIO DE DURACION: mostrarlo como MEDIA HORAS
+% TG SUMA DE DURACION: mostrarlo como % HORAS
