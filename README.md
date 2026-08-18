@@ -10,11 +10,38 @@ Se importaría todo el contenido de la hoja de Excel, de tal manera que sería n
 
 En primer lugar, habría que definir dicho rango en Excel, para luego importarlo como tabla a Power BI. El inconveniente de un rango es que, si entran filas por debajo de la última del rango o columnas a la derecha de la última, el rango no lo cogería, por lo que tendríamos que actualizar el fichero de Excel cada vez que hagamos este tipo de operaciones.
 
+
+## Formato a columnas
+
+Podemos cambiar el tipo de dato de las columnas con tipo compatible, es decir, entre columnas numéricas o fechas. No obstante, si cambiamos el tipo de dato, no lo solemos realizar desde Power BI, más bien desde Power Query
+
+**Para cambiar el formato de una columna**, seleccionamos la misma y en la ficha HERRAMIENTAS DE COLUMNAS, en el GRUPO FORMATO, podemos ajustarlo.
+> Vista Tabla > Seleccionamos columna > Herramientas de columnas > Formato
+
+### Formatos personalizados
+- Caracteres de formato de número
+ 0 , #, "texto"ç
+
+ 0: caracater del formato de número obligatorio. Son 0, que se colocan a la izquierda e indican el número de cifras.
+ 
+ #: Caracter de formato de número opciona, no coloca 0 a la izquierda, se usa para indicar el separador de miles.
+
+ texto: Texto dentro del formato, se coloca ""
+
+>Cuando creamos un formato, el separador de miles que se utiliza en Power BI es la coma: “,” y el separador decimal es el punto: “.”. Esto solo a la hora de crearlo, ya que luego, cuando en un informe nos muestra los datos formateados Power BI, vemos el separador de miles con el punto y el decimal con la coma
+
+ Ejemplo:
+
+#,##0” horas”
+
+
+
 ## Importante
 - La importación más recomendable es la de una tabla de datos.
 - Como hemos mencionado anteriormente, desde Power BI, no podemos agregar, eliminar o modificar datos, ya que los tenemos en lectura. Para modificar los datos, hay que hacerlo en el fichero de origen, en el Excel que acabamos de importar.
 - Una vez se haga una actualización en el excel, entonces: Lo haremos desde la ficha INICIO en el GRUPO CONSULTAS, pulsando el botón ACTUALIZAR en power BI
-
+- El tipo de dato viene dado por los datos de origen, de tal modo que, si se detecta en un campo un tipo de dato texto, es porque en el fichero de origen que hemos importado dicha columna tiene al menos un valor texto.
+- Podemos cambiar el tipo de dato de las columnas con tipo compatible, es decir, entre columnas numéricas o fechas. No obstante, si cambiamos el tipo de dato, no lo solemos realizar desde Power BI, más bien desde Power Quer
 
 ## Practicas 
 
