@@ -79,6 +79,22 @@ Para formatear una a una cada columna que hayamos agregado a la tabla.
 
 Todos los informes, sean del tipo que sean, que estén en una misma página, tienen  interacción. Es decir, seleccionando un dato quedan filtradas todas las visualizaciones de la página.
 
+#### Más Informes - Segmentación de datos
+
+un tipo de informe que utilizamos para filtrar todas las visualizaciones de la página. A ella solo se agrega un único campo, de tal modo, que, al seleccionar un elemento del campo agregado, se emite un filtro por dicho elemento a todos los informes de la página.
+
+Por tanto, es un elemento visual que utilizamos para aplicar filtros a todo el lienzo.
+Entre las propiedades que destacan son la configuración de la segmentación(forma de ver los elementos) y valores (elementos del campo)
+
+#### Tarjeta 
+
+Totaliza un campo seleccionado
+
+>La tarjeta es el único tipo de informe que no emite filtros sobre ninguna otra visualización, pero sí recibe filtros por parte de cualquier otro informe.
+
+Entre las propiedades que destacan estan Valor del globo (conf. del dato que totaliza la tarjeta) y Etiqueta de categoría.
+
+
 ## Importante
 - La importación más recomendable es la de una tabla de datos.
 - Como hemos mencionado anteriormente, desde Power BI, no podemos agregar, eliminar o modificar datos, ya que los tenemos en lectura. Para modificar los datos, hay que hacerlo en el fichero de origen, en el Excel que acabamos de importar.
