@@ -104,3 +104,27 @@ Guardar el fichero con el nombre BD FACTURAS TXT
 Vamos a modificar el nombre de los otros dos campos de valores de la tabla:
 PROMEDIO DE DURACION: mostrarlo como MEDIA HORAS
 % TG SUMA DE DURACION: mostrarlo como % HORAS
+
+### Practica IV
+
+Abrir el fichero de Power BI BD FACTURAS, que lo hemos guardado anteriormente.
+1. Ir a la vista tabla y cambiar los formatos de los siguientes campos:
+
+IMPORTE CLIENTE: personalizar un formato con separador de miles y dos posiciones decimales que termine con el texto: Eur. (por ejemplo, un importe de 1250,25 se mostrará como: 1.250,25 Eur.).
+IMPORTE PROVEEDOR: aplicar un formato moneda con el símbolo del €.
+FECHA FACTURA CLIENTE: aplicar un formato de fecha: dd/mm/yyyy.
+Cambiar la función predeterminada del campo NUMERO FACTURA CLIENTE a RECUENTO.
+Ocultar los campos: FECHA FACTURA CLIENTE y ZONA.
+2. Ir a la vista informe e insertar una tabla que de cada CLIENTE muestre: RECUENTO DEL NUMERO FACTURA CLIENTE, SUMA IMPORTE CLIENTE, % DEL TOTAL GENERAL SOBRE LA SUMA DEL IMPORTE CLIENTE. Cambiar en dicha tabla el nombre de los siguientes campos:
+
+RECUENTO DE NUMERO FACTURA CLIENTE: TOTAL FACTURAS
+SUMA DE IMPORTE CLIENTE: TOTAL CLIENTE
+% TG SUMA DE IMPORTE CLIENTE: % TOTAL CLIENTE
+3. Ordenar la tabla por el campo TOTAL FACTURAS de menor a mayor. Insertar una tabla que cuente en cada PROVINCIA el número diferente de CLIENTES que hay (APLICAR AL CAMPO CLIENTE EL RECUENTO DISTINTIVO). Cambiar el campo RECUENTO CLIENTE por NUM CLIENTES.
+
+ 4. Insertar una matriz, que muestre:
+
+FILA: CONCEPTO
+COLUMNA: TIPO
+VALORES: RECUENTO DE NUMERO FACTURA CLIENTE
+Guardar los cambios y cerrar el fichero.
