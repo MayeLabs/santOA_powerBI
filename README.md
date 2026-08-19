@@ -141,6 +141,19 @@ Selecciono el campo > Clic en flecha hacia abajo > Formato condicional
 
 " Para eliminar un formato condicional de un campo, volveríamos a mostrar las opciones o propiedades del campo del que quitar el formato, y en este caso seleccionaríamos la opción QUITAR EL FORMATO CONDICIONAL, seguido del tipo de regla que eliminar "
 
+### Formato de barra de datos
+
+Este formato condicional se aplica para mostrar una barra en cada valor, de tal modo que, cuanto más larga es la barra, mayor es el dato, y cuanto más corta es la barra, menor es el dato.
+
+Se agregan barras a tablas o a matrices, pero solo a campos totalizados
+
+> Barras de datos: necesitan un valor numérico, por lo que se aplican a campos de valores/totalizados.
+
+¿Cómo obtenerlo?
+Selecciono el campo > Clic en flecha hacia abajo > Formato condicional > Barra de datos
+
+> Si se desea mostrar barras y etiquetas, no activar check Mostrar solo barras
+
 ## Importante
 - La importación más recomendable es la de una tabla de datos.
 - Como hemos mencionado anteriormente, desde Power BI, no podemos agregar, eliminar o modificar datos, ya que los tenemos en lectura. Para modificar los datos, hay que hacerlo en el fichero de origen, en el Excel que acabamos de importar.
