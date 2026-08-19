@@ -403,3 +403,11 @@ Guardar los cambios y cerrar el fichero.
 ### Practica 7
 
 Aplicar un formato condicional al campo CURSO para poner la fuente en color azul de los cursos cuya SUMA DE DURACION es mayor de 1200.
+
+### Práctica 8 p. 1
+
+* Insertar una tabla en el fichero de Excel con el nombre T_CLIENTE.
+* Guardar los cambios y cerrar el fichero.
+* Abrir un Power BI en blanco.
+* Importar la tabla T_CLIENTES al Power BI en blanco.
+* Guardar el fichero con el nombre BD PERSONAS.
