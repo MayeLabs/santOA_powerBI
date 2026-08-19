@@ -264,3 +264,7 @@ Insertar un gráfico de barras agrupadas en la página FILTROS del fichero BD CU
 A continuación, filtrar el gráfico por los dos clientes de ESPAÑA con la suma del importe cliente más alta.
 
 Guardar los cambios y cerrar el fichero.
+
+### Practica 7
+
+Aplicar un formato condicional al campo CURSO para poner la fuente en color azul de los cursos cuya SUMA DE DURACION es mayor de 1200.
