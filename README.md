@@ -283,9 +283,9 @@ Automáticamente, los datos se cargarán en Power BI, las visualizaciones insert
 - El tipo de dato viene dado por los datos de origen, de tal modo que, si se detecta en un campo un tipo de dato texto, es porque en el fichero de origen que hemos importado dicha columna tiene al menos un valor texto.
 - Podemos cambiar el tipo de dato de las columnas con tipo compatible, es decir, entre columnas numéricas o fechas. No obstante, si cambiamos el tipo de dato, no lo solemos realizar desde Power BI, más bien desde Power Quer
 
-## Practicas 
+## Prácticas 
 
-### Practica I
+### Práctica I
 
 El fichero 06. BD FACTURAS es una base de datos en la que vamos registrando diferentes facturas realizadas a clientes, de distintos conceptos, y que tiene las siguientes columnas:
 NUMERO FACTURA CLIENTE: se indica el número de la factura.
@@ -310,7 +310,7 @@ Ir a la vista tabla
 Guardar el fichero con el nombre BD FACTURAS
 
 
-### Practica II
+### Práctica II
 
 El fichero de texto 07. BD FACTURAS tiene los mismos datos que el fichero 06. BD FACTURAS de Excel que hemos importado en la práctica anterior. Realiza las siguientes operaciones:
 Abrir un POWER BI en blanco
@@ -318,13 +318,13 @@ Importar el fichero de texto 07. BD FACTURAS
 Ir a la vista tabla
 Guardar el fichero con el nombre BD FACTURAS TXT
 
-### Practica III
+### Práctica III
 
 Vamos a modificar el nombre de los otros dos campos de valores de la tabla:
 PROMEDIO DE DURACION: mostrarlo como MEDIA HORAS
 % TG SUMA DE DURACION: mostrarlo como % HORAS
 
-### Practica IV
+### Práctica IV
 
 Abrir el fichero de Power BI BD FACTURAS, que lo hemos guardado anteriormente.
 1. Ir a la vista tabla y cambiar los formatos de los siguientes campos:
@@ -349,7 +349,7 @@ VALORES: RECUENTO DE NUMERO FACTURA CLIENTE
 Guardar los cambios y cerrar el fichero.
 
 
-### Practica V
+### Práctica V
 
 Abrir el fichero de Power BI BD FACTURAS.
 Seleccionar la tabla de clientes y cambiar los siguientes formatos:
@@ -363,7 +363,7 @@ Poner los encabezados de fila en negrita y cursiva.
 Filtrar los informes de la página por la provincia de ALICANTE.
 Guardar los cambios y cerrar el fichero.
 
-### Practica 5
+### Práctica 5
 1. Abrir el fichero BD FACTURAS e ir a la vista informe.
 
 2. Agregar una nueva página de informe y nombrarla como GRAFICOS. Insertar un gráfico de barras 100 % apiladas que muestre:
@@ -389,7 +389,7 @@ Guardar los cambios y cerrar el fichero.
 
     Guardar los cambios y cerrar el fichero.
 
-### Practica 6
+### Práctica 6
 
 Insertar un gráfico de barras agrupadas en la página FILTROS del fichero BD CURSOS que muestre:
 
@@ -400,7 +400,7 @@ A continuación, filtrar el gráfico por los dos clientes de ESPAÑA con la suma
 
 Guardar los cambios y cerrar el fichero.
 
-### Practica 7
+### Práctica 7
 
 Aplicar un formato condicional al campo CURSO para poner la fuente en color azul de los cursos cuya SUMA DE DURACION es mayor de 1200.
 
@@ -411,3 +411,24 @@ Aplicar un formato condicional al campo CURSO para poner la fuente en color azul
 * Abrir un Power BI en blanco.
 * Importar la tabla T_CLIENTES al Power BI en blanco.
 * Guardar el fichero con el nombre BD PERSONAS.
+
+### Práctica 8 p. 2
+
+Ir al editor de Query del fichero 08. BD PERSONAS y, desde la ficha transformar, realizar las siguientes transformaciones:
+
+* Poner las columnas NOMBRE, APELLIDO1 Y APELLIDO2 con la primera letra mayúscula.
+* Combinar las columnas NOMBRE, APELLIDO1 Y APELLIDO2, separando cada una por un espacio y nombrar la columna combinada como nombre completo.
+* Dividir la columna NIF en dos columnas, en una los 8 números y en la otra la letra.
+* Poner la columna con la letra del NIF en mayúscula.
+* Combinar ambas columnas del NIF separando los números de las letras por un guion.
+* Nombrar a la columna combinada como: NIF
+
+Desde la ficha AGREGAR COLUMNA, agregar las siguientes columnas sobre la fecha incorporación:
+
+* AÑO: el nombre de la fecha incorporación.
+* TRIMESTRE: el trimestre del año de la fecha incorporación.
+* Desde la ficha TRANSFORMAR, poner el prefijo: “TRIM.” delante de cada trimestre, de tal modo que se vean como: TRIM. 1, TRIM. 2, TRIM. 3, TRIM. 4.
+
+Cargar los datos en Power BI.
+
+Guardar los cambios al fichero BD PERSONAS.
