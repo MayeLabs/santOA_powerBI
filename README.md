@@ -121,8 +121,25 @@ Se pueden realizar filtros por campos que tenemos totalizados en el informe.
 ### Filtris TOP N
 Este tipo de filtro es para resaltar los valores más altos o bajos de un campo.
 
-Por ejemplo, en nuestra tabla queremos mostrar los 3 cursos que menos veces se han dado. Para ello, en el panel de filtros del objeto visual, expandimos los filtros del campo CURSO y seleccionamos el tipo de filtro TOP N:
+Por ejemplo, en nuestra tabla queremos mostrar los 3 cursos que menos veces se han dado. Para ello, en el panel de filtros del objeto visual, expandimos los filtros del campo CURSO y seleccionamos el tipo de filtro TOP N.
 
+## Formatos condicionales 
+
+Tanto los campos que totalizamos en una matriz como los campos que agregamos a una tabla tienen activada la propiedad formato condicional, para poder resaltar aquellos valores en los que queramos llamar la atención.
+
+> En una matriz, el formato condicional solo se puede aplicar a los campos del área de valores, mientras que en una tabla se puede aplicar a todos los campos, tanto a los que totalizamos como a los que agrupamos.
+
+> Habitualmente, solemos aplicarlo solo a los valores, ya que a los totales absolutos es menos frecuente al totalizar a todos los valores.
+
+¿Cómo hacer formato condicional?
+
+Selecciono el campo > Clic en flecha hacia abajo > Formato condicional
+
+> Si mantenemos la opción de DEGRADADO, no estableceríamos ninguna condición, lo que haría sería dar un color más oscuro a valores altos y más claro a valores bajos
+
+¿Cómo eliminaria un formato condicional?
+
+" Para eliminar un formato condicional de un campo, volveríamos a mostrar las opciones o propiedades del campo del que quitar el formato, y en este caso seleccionaríamos la opción QUITAR EL FORMATO CONDICIONAL, seguido del tipo de regla que eliminar "
 
 ## Importante
 - La importación más recomendable es la de una tabla de datos.
