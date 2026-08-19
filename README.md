@@ -159,6 +159,123 @@ Este formato condicional lo utilizamos para marcarnos un objetivo y, mediante ic
 
 > Este formato condicional se puede dar tanto al campo por el que agrupamos de la tabla como al que totalizamos. Como siempre, en las matrices, solo al campo del área de valores.
 
+## Introducción a Power Query
+
+Power Query es el que manda los datos a Power BI, es decir, aunque nosotros hagamos las importaciones a través de Power BI, también podríamos importar tablas a través de Power Query, donde quedan guardados los datos.
+
+Se puede decir que Power Query es el motor de Power BI, y que Power BI es la carrocería, lo que se ve por fuera. Ya que, como hemos dicho, Power Query marca los datos con los que vamos a trabajar en Power BI, y en el propio Power BI vamos a graficar y formatear esos datos para conocer la información que guardamos en nuestras tablas.
+
+Para acceder a la ventana de Power Query:
+ficha INICIO del fichero y en el grupo de botones CONSULTAS pulsamos directamente sobre el botón TRANSFORMAR DATOS.
+
+En la ventana de Power Query, tenemos en la parte superior la CINTA DE OPCIONES, con las fichas: ARCHIVO, INICIO, TRANSFORMAR, AGREGAR COLUMNA, VISTA, HERRAMIENTAS Y AYUDA.
+
+### Panel de consultas
+Donde se van agregando las tablas que vamos importando desde Power BI.
+
+### Panel de contenido
+Donde nos muestra el contenido de la tabla que tenemos seleccionada en el panel de consultas. En él vemos tanto los campos como los registros.
+
+Respecto al botón de filtro, si aplicamos un filtro desde Power Query, en Power BI solo trabajaremos y graficaremos sobre dichos registros filtrados.
+
+
+### Panel de pasos
+Situado en la parte derecha del área de trabajo, nos muestra el nombre de la tabla seleccionado. Desde aquí podemos cambiar el nombre de la tabla Por debajo, tenemos los pasos que hayamos aplicado sobre la tabla. 
+
+> Cada operación que hagamos en el panel de contenido se agregará al panel de pasos. De tal forma que, en Power Query, no existe el botón deshacer; si hemos hecho un paso incorrecto, lo tendremos que eliminar en el panel de pasos
+
+vemos que la tabla tiene por defecto tres pasos aplicados en el panel de pasos:
+
+#### Origen
+En dicho paso, está indicada la ruta del fichero donde está guardada la tabla que hemos insertado
+
+> Al dar clic, se activa la barra de formulas, tener en cuenta que Power Query utiliza el lenguaje de programación M, que es lo que expresa sobre dicha barra de fórmulas. En algunos casos podemos hacer cambios de forma intuitiva, pero, por norma general, es aconsejable que, si no sabemos el lenguaje de programación M, no hagamos uso de ella.
+
+##### Cambiando origenes de datos
+si de un mismo fichero importamos varias tablas y el fichero de origen lo movemos de carpeta, lógicamente, a las tablas importadas de dicho fichero, tendríamos que actualizar la ruta del fichero de origen. Habiéndolo hecho a través del paso origen, lo tendríamos que hacer una a una cada una de las tablas.
+
+Otra opción más rápida en este caso es cambiar la ruta de todo el fichero, de esta forma, todas las tablas que pertenezcan a dicho archivo actualizarán a la vez la ruta del nuevo origen de datos.
+
+Para cambiar la ruta de todo el fichero, lo hacemos a través de la FICHA INICIO, en el grupo de botones ORIGENES DE DATOS, pulsamos el botón CONFIGURACION DE ORIGEN DE DATOS
+
+Finalmente, para replicar a todas las tablas del archivo la ruta modificada, tendríamos que ACTUALIZAR los datos desde Power Query, a través del botón ACTUALIZAR VISTA PREVIA del grupo de botones CONSULTA de la ficha INICIO:
+
+
+#### Navegación
+En este paso es en el que seleccionamos el nombre de la tabla que estamos importando del fichero de origen. Este paso también tiene la rueda a su derecha. Si la pulsamos, nos muestra los rangos, hojas y tablas del fichero que hemos importado en el paso anterior. De esta forma, podemos cambiar de tabla en la importación. Si en el fichero de Excel modificamos el nombre de la tabla, en este paso tendremos que actualizarlo. 
+
+#### Tipo cambiado
+Es el paso en el que se asigna el tipo de dato a cada columna. Si vamos al panel de contenido del paso, vemos como en cada columna marca a la izquierda del nombre un único icono con el tipo de dato de esta.
+
+> En algunos casos, al realizar un paso que genere una columna, Query inserta un paso tipo cambiado. Siempre que lo veamos, nos debemos fijar en él para ver a qué columna le está cambiando el tipo de dato, y si el tipo de dato que le ha asignado encaja con el tipo de dato con el que vamos a querer trabajar sobre dicha columna.
+
+### Operaciones básicas en Query
+
+> En primer lugar, hay que destacar que Query diferencia entre mayúsculas y minúsculas. Para que dos elementos sean iguales, han de tener los mismos caracteres y coincidir las mayúsculas y las minúsculas.
+
+- **Eliminar columnas**: Se selccionan la col > clic derechos > quitar
+- **Copiar columna**: Seleccionar col > pulsar sobre el botón derecho > del menú emergente > DUPLICAR COLUMNA.
+- ** Cambiar el nombre de un paso**: Nos colocamos sobre el paso > pulsar botón derecho > del menú emergene > CAMBIAR NOMBRE
+- **Copiar una tabla**: Ubicarse en panel consulta > Sleccionar tabla > pulsar botón derechos > DUPLICAR
+- **Eliminar una tabla**
+- **Cambiar nombre de una tabla.**
+- **Cambiar nombre a una columna:** 
+    - Dos clics rápidos con el botón izquierdo sobre la col o tabla.
+    - Botón derecho sobre el nombre de de la col > CAMBIAR NOMBRE
+- **Quitar filas**: FICHA INICIO > en el grupo de botones REDUCIR FILAS > Pulsar QUITAR FILAS
+    - Nos muestra las siguientes opciones:
+        - QUITAR FILAS SUPERIORES: indicar el número de filas superiores que queremos quitar de la tabla.
+        - QUITAR FILAS INFERIORES: indicar el número de filas inferiores que queremos quitar de la tabla.
+        - QUITAR FILAS ALTERNAS: indicar a partir de qué fila queremos empezar a eliminar, e indicar cada cuántas filas eliminamos y cada cuántas conservamos filas.
+        - QUITAR DUPLICADOS: elimina las filas repetidas de las columnas que tenemos seleccionadas de la tabla.
+        - QUITAR FILAS EN BLANCO: elimina los datos vacíos o nulos de las columnas que tenemos seleccionadas de la tabla.
+        - QUITAR ERRORES: elimina los datos con error de las columnas que tengamos seleccionadas de la tabla.
+        - FILTRAR DATOS: a través del botón de filtro de la columna que filtrar, procederemos a seleccionar las opciones que queramos filtrar
+
+> Debemos tener en cuenta, que, si hacemos un filtro en Power Query, al cargar los datos a Power BI solo trabajaremos y graficaremos los datos cargados, es decir, los datos que se muestran en el filtro
+- **Importar datos desde power Query**: FICHA INICIO en el grupo de botones NUEVA CONSULTA, seleccionando NUEVO ORIGEN.
+
+### Transformaciones básicas
+- **Formato**:
+    Seleccionamos dicha columna, vamos a la ficha TRANSFORMAR y en el grupo de botones COLUMNA DE TEXTO seleccionamos el botón FORMATO.
+
+    - MINÚSCULAS: pone todas las letras del campo seleccionado en minúsculas.
+    - MAYÚSCULAS: pone todas las letras del campo seleccionado en mayúsculas.
+    - PONER EN MAYÚSCULA CADA PALABRA: pone la primera letra de cada palabra en mayúsculas.
+    - RECORTAR: elimina los espacios sobrantes del campo.
+    - LIMPIAR: elimina los caracteres no imprimibles del campo.
+    - AGREGAR PREFIJO: agrega un texto por delante de cada valor del campo seleccionado.
+    - AGREGAR SUFIJO: agrega un texto por detrás de cada valor del campo seleccionado.
+
+    Dicha opción también la tenemos desde la ficha AGREGAR COLUMNA:
+
+- **Dividir columnas**: Esta opción es la equivalente a la opción TEXTO EN COLUMNAS de Excel. Lo que hacer es separar en varias columnas o campos el dato que tenemos en una sola columna o campo. Esta opción solo está disponible en la FICHA TRANSFORMAR.
+    - POR DELIMITADOR: Para separar el texto utilizaríamos un separador, es decir, un carácter que cada vez que aparezca en el dato del campo se genera una nueva columna.
+    - POR NUMERO DE CARACTERES	Tenemos que indicar cada cuántos caracteres queremos separar el texto.
+    - POR POSICIONES: Indicamos en qué posiciones del texto queremos que se separe. Debemos tener en cuenta que el primer carácter es el 0.
+    - DE MINUSCULA A MAYUSCULA: Como indica, lo separa por los caracteres en minúsculas y mayúsculas.
+    - DE MAYUSCULA A MINUSCULA: Separa de los caracteres en mayúsculas a los que están en minúsculas.
+    - DE DIGITO A NO DIGITO: De número a texto.
+    - DE NO DIGITO A DIGITO: De texto a número.
+
+- **Combinar columnas**: Esta opción de combinar columna la tenemos disponible tanto desde la ficha TRANSFORMAR como desde la ficha AGREGAR COLUMNA.
+    - Esta opción lo que hace es juntar el contenido de las columnas seleccionadas. Para que se active, debemos tener seleccionadas las columnas que queremos juntar y haberlas seleccionado en el orden que las queremos colocar.
+- **Extraer**: Podemos utilizarla tanto desde la ficha TRANSFORMAR como desde la ficha AGREGAR COLUMNA.
+    - Nos muestra las siguientes opciones:
+        - Longitud
+        - Primeros caracteres
+        - Ultimos caracteres
+        - Texto antes del limitador
+        - Texto despues del limitador
+        - Texto entre limitadores
+> Lo más habitual suele ser agregar nuevas columnas sobre campos fecha.
+
+### Cargar datos a power BI
+
+Una vez que hemos realizado todas las transformaciones, cargaremos los datos a Power BI. Para ellos, vamos a la ficha INICIO y pulsamos el botón CERRAR Y APLICAR, siendo el primer botón de dicha ficha inicio.
+
+Automáticamente, los datos se cargarán en Power BI, las visualizaciones insertadas se actualizarán con los datos mostrados y transformados en Power Query y, en el panel de datos y vista tabla, los campos eliminados ya no estarán. Las columnas agregadas estarán disponibles y las columnas transformadas tendrán los cambios que hemos configurado.
+
 ## Importante
 - La importación más recomendable es la de una tabla de datos.
 - Como hemos mencionado anteriormente, desde Power BI, no podemos agregar, eliminar o modificar datos, ya que los tenemos en lectura. Para modificar los datos, hay que hacerlo en el fichero de origen, en el Excel que acabamos de importar.
