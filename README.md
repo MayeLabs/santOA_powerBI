@@ -101,6 +101,21 @@ Entre las propiedades que destacan estan Valor del globo (conf. del dato que tot
 ### Gráfico circular
 cuando no necesitamos ejes, es decir, cuando solo queremos ver la evolución de los elementos de un solo campo. Por ejemplo, queremos ver el número de cursos que se han dado en cada jornada.
 
+## Panel de filtros
+A través del panel de filtros podemos filtrar un único informe, todos los informes de la misma página o todos los informes de todas las páginas.
+
+Cuando se agrega un grafico, en filtro se muestra:
+- FILTROS DE ESTE OBJETO VISUAL: Se ven los campos agregado y los filtros que se creen aca, *afectaran solo a dicho informe*
+- FILTROS DE ESTA PAGINA: Los campos que agreguemos a esta área filtrarán todos los informes que tengamos en esta página.
+- FILTROS DE TODAS LAS PAGINAS: Los campos que agreguemos a esta área filtrarán todos los informes de todas las páginas.
+
+El filtro más habitual en el panel de filtros es el del objeto visual. No obstante, en todas las áreas del panel de filtros se configuran exactamente igual todos los filtros.
+
+Los filtros de un objeto visual se pueden aplicar tanto sobre tablas como matrices como gráficos, es decir, sobre cualquier tipo de informe, y se configuran exactamente igual en todos.
+
+
+
+
 ## Importante
 - La importación más recomendable es la de una tabla de datos.
 - Como hemos mencionado anteriormente, desde Power BI, no podemos agregar, eliminar o modificar datos, ya que los tenemos en lectura. Para modificar los datos, hay que hacerlo en el fichero de origen, en el Excel que acabamos de importar.
