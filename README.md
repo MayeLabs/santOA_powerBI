@@ -105,7 +105,8 @@ cuando no necesitamos ejes, es decir, cuando solo queremos ver la evolución de 
 A través del panel de filtros podemos filtrar un único informe, todos los informes de la misma página o todos los informes de todas las páginas.
 
 Cuando se agrega un grafico, en filtro se muestra:
-- FILTROS DE ESTE OBJETO VISUAL: Se ven los campos agregado y los filtros que se creen aca, *afectaran solo a dicho informe*
+- FILTROS DE ESTE OBJETO VISUAL: Se ven los campos agregado y los filtros que se creen aca, *afectaran solo a dicho informe* 
+> tambien podemos filtrar por campos que no hemos agregado al informe (en agregar campo de datos)
 - FILTROS DE ESTA PAGINA: Los campos que agreguemos a esta área filtrarán todos los informes que tengamos en esta página.
 - FILTROS DE TODAS LAS PAGINAS: Los campos que agreguemos a esta área filtrarán todos los informes de todas las páginas.
 
@@ -113,6 +114,9 @@ El filtro más habitual en el panel de filtros es el del objeto visual. No obsta
 
 Los filtros de un objeto visual se pueden aplicar tanto sobre tablas como matrices como gráficos, es decir, sobre cualquier tipo de informe, y se configuran exactamente igual en todos.
 
+### Filtros en campos totalizados
+
+Se pueden realizar filtros por campos que tenemos totalizados en el informe.
 
 
 
