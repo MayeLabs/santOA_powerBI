@@ -187,3 +187,29 @@ Poner los encabezados de columna en negrita.
 Poner los encabezados de fila en negrita y cursiva.
 Filtrar los informes de la página por la provincia de ALICANTE.
 Guardar los cambios y cerrar el fichero.
+
+### Practica 5
+1. Abrir el fichero BD FACTURAS e ir a la vista informe.
+
+2. Agregar una nueva página de informe y nombrarla como GRAFICOS. Insertar un gráfico de barras 100 % apiladas que muestre:
+
+   - EJE Y: CONCEPTO
+   - EJE X: RECUENTO DE NUMERO FACTURA CLIENTE
+   - LEYENDA: SECTOR
+   
+3. Mostrar las etiquetas de datos.
+
+4. Insertar un gráfico de anillos que muestre:
+
+    - LEYENDA: SECTOR
+    - VALORES: RECUENTO DE NUMERO FACTURA CLIENTE
+
+5. Cambiar el color del segmento CONTRUCCION a color GRIS
+
+6. Insertar una tarjeta que haga el RECUENTO DE NUMERO FACTURA CLIENTE.
+
+    - Cambiar el texto de la etiqueta por TOTAL FACTURAS.
+    - Dar un color de fondo azul y una sombra amarilla.
+7. Insertar una segmentación de datos del campo PROVINCIA y filtrar por la provincia de MADRID.
+
+    Guardar los cambios y cerrar el fichero.
