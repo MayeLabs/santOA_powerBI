@@ -154,6 +154,11 @@ Selecciono el campo > Clic en flecha hacia abajo > Formato condicional > Barra d
 
 > Si se desea mostrar barras y etiquetas, no activar check Mostrar solo barras
 
+### Formato de iconos
+Este formato condicional lo utilizamos para marcarnos un objetivo y, mediante iconos, ver los datos que no alcanzan dicho objetivo, los datos que lo consiguen y los datos que lo superan.
+
+> Este formato condicional se puede dar tanto al campo por el que agrupamos de la tabla como al que totalizamos. Como siempre, en las matrices, solo al campo del área de valores.
+
 ## Importante
 - La importación más recomendable es la de una tabla de datos.
 - Como hemos mencionado anteriormente, desde Power BI, no podemos agregar, eliminar o modificar datos, ya que los tenemos en lectura. Para modificar los datos, hay que hacerlo en el fichero de origen, en el Excel que acabamos de importar.
