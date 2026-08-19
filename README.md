@@ -94,6 +94,12 @@ Totaliza un campo seleccionado
 
 Entre las propiedades que destacan estan Valor del globo (conf. del dato que totaliza la tarjeta) y Etiqueta de categoría.
 
+#### Gráficos de columnas y líneas
+
+ Lo utilizamos cuando queremos representar en un mismo gráfico dos campos totalizados, uno con valores altos y otro con valores bajos. De esta forma, uno se medirá en un eje vertical principal y el otro en el eje vertical secundario.
+
+### Gráfico circular
+cuando no necesitamos ejes, es decir, cuando solo queremos ver la evolución de los elementos de un solo campo. Por ejemplo, queremos ver el número de cursos que se han dado en cada jornada.
 
 ## Importante
 - La importación más recomendable es la de una tabla de datos.
