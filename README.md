@@ -118,6 +118,10 @@ Los filtros de un objeto visual se pueden aplicar tanto sobre tablas como matric
 
 Se pueden realizar filtros por campos que tenemos totalizados en el informe.
 
+### Filtris TOP N
+Este tipo de filtro es para resaltar los valores más altos o bajos de un campo.
+
+Por ejemplo, en nuestra tabla queremos mostrar los 3 cursos que menos veces se han dado. Para ello, en el panel de filtros del objeto visual, expandimos los filtros del campo CURSO y seleccionamos el tipo de filtro TOP N:
 
 
 ## Importante
@@ -232,3 +236,14 @@ Guardar los cambios y cerrar el fichero.
 7. Insertar una segmentación de datos del campo PROVINCIA y filtrar por la provincia de MADRID.
 
     Guardar los cambios y cerrar el fichero.
+
+### Practica 6
+
+Insertar un gráfico de barras agrupadas en la página FILTROS del fichero BD CURSOS que muestre:
+
+   - EJE Y: CLIENTE
+   - EJE X: SUMA DE IMPORTE CLIENTE
+
+A continuación, filtrar el gráfico por los dos clientes de ESPAÑA con la suma del importe cliente más alta.
+
+Guardar los cambios y cerrar el fichero.
