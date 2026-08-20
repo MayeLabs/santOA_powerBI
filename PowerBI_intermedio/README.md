@@ -149,8 +149,60 @@ La forma que tendríamos de proceder sería: seleccionar el gráfico al que quer
 Si, por el contrario, hemos quitado una interacción y la queremos volver a colocar, seleccionamos el informe a modificar, y sobre el informe que queremos que interactúe, pulsamos el botón FILTRO (icono de gráfica)
 
 Una vez que hayamos modificado las interacciones, podemos ocultar sus iconos yendo nuevamente a la FICHA FORMATO y desactivando el botón EDITAR INTERACCIONES. 
+
 ---
- 
+
+### Marcadores
+
+Los marcadores son una herramienta para obtener una especie de foto interactiva en un punto determinado, es decir permite guardar el estado actual de una página del informe.
+
+Se suele usar para:
+- Quitar los filtros aplicados: No tenemos ningun botón que quite todos los filtros, pero podemos tener un marcador que guarde el estado de la página sin filtros.
+- Poner el foco en un unico informe que nos interesa resaltar: Si se necesita acceder al modo enfoque de un informe para verlo detenidamente.
+- Mostrar u ocultar elementos visuales: Podemos ocultar informes para solo mostrar en la página aquellos que, según una situación concreta, nos interesa mostrar. 
+
+> Algo que debemos tener siempre en cuenta, es que el marcador graba el estado de los datos de un informe, pero no graba las posiciones en las que están colocados en la página ni el tamaño de estos. No tiene sentido crear marcadores donde se cambia el tamaño de un informe o lo movemos de lugar en la página. Estos cambios afectarían a toda la página de informe y NO SOLO al marcador creado. 
+
+> Otro detalle a tener en cuenta es que los marcadores afectan a los informes de la página de informes que tenemos activada en el momento de crear el marcador. 
+
+***¿Cómo crear un marcador?***
+
+Ir a la ficha Ver > Grupo de botones mostrar paneles > Marcadores
+
+Luego presionar el botón agregar
+
+Una vez se crear para cambiarle el nombre, dar doble clic
+
+***¿Cómo ejecutar el marcador?***
+
+
+**Forma 1**
+
+Pulsar sobre el panel de marcadores el botón con el nombre del marcador a ejecutar.
+
+
+**Forma 2**
+
+Ficha INSERTAR > BOTONES > elejir botón
+Al presionar el botón se abre *Formato del botón* ir a Acción, activarla.
+
+En esa propiedad acción, asignar el marcador e indicar cual es el marcador que se desea ejecutar
+
+> Y para ejecutarlo presionar CTRL + Clic Izquierdo
+
+***¿Cómo se modifica un marcador?***
+
+Si hemos grabado un marcador, y algo no ha quedado como se esperaba, ponemos el informe en el estado correcto que quería grabar, y en el panel de marcadores, a la derecha del nombre del marcador, pulsamos el botón MÁS OPCIONES, seleccionando la opción: ACTUALIZAR. 
+![Marcadores](/img/marcadores.png)
+
+
+***¿Cómo ocultar gráficas ?***
+
+![alt text](image.png)
+
+
+
+
 ## Prácticas
 
 ### Ejercicio 001
