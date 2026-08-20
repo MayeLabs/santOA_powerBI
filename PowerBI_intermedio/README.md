@@ -19,7 +19,7 @@ Al la fecha con jerarquía agregarla a un tabla, se visualizan varias opciones:
 3. Ir al siguiente nivel de jerarquía.
 4. Explorar en profundidad.
 
-![Opciones jeraquía](img/jerarquías.png)
+![Opciones jeraquía](/img/jerarquías.png)
 
 
 ## Prácticas
