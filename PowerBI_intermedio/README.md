@@ -127,3 +127,8 @@ Después, dividir el gráfico por COMERCIAL.
 
 Inserta en una nueva página de informe, un mapa coroplético en el que agregarás a la ubicación el campo PAIS que crearemos, un formato condicional donde se pondrán en color verde los países con suma de duración menor de 3000 y en color azul los países con suma de duración mayor o igual a 3000. 
 
+### Ejercicio 004
+
+En una nueva página de informe insertar un mapa en el que se muestre en cada CIUDAD la suma del IMPORTE CLIENTE. Poner el color de la burbuja en verde.
+
+Insertar una segmentación del campo PAIS y filtrar el mapa por ESPAÑA.
