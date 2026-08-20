@@ -59,3 +59,10 @@ En una nueva página de informe con la tabla T_CURSOS importada del fichero BD C
 Seguidamente, insertar una segmentación de datos y agregar el campo TRIMESTRE de la jerarquía del campo FECHA CURSO y filtrar por el trimestre 1 y 2.
 
 Nota: Para seleccionar varios, usar ctrl.
+
+
+### Ejercicio 002
+
+En una nueva página de informe, agregar un gráfico de líneas que muestre, por año y trimestre de la FECHA CURSO, la suma del IMPORTE CLIENTE (en el eje principal) y el recuento de CURSO (Eje Y secundario). 
+
+Después, dividir el gráfico por COMERCIAL. 
