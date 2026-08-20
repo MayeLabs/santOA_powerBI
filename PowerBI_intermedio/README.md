@@ -180,3 +180,19 @@ Inserta en una nueva página de informe, un mapa coroplético en el que agregar�
 En una nueva página de informe insertar un mapa en el que se muestre en cada CIUDAD la suma del IMPORTE CLIENTE. Poner el color de la burbuja en verde.
 
 Insertar una segmentación del campo PAIS y filtrar el mapa por ESPAÑA.
+
+### Ejercicio 005
+
+Insertar una nueva página de informes y en ella insertar un medidor que totalice la suma del IMPORTE CLIENTE con los siguientes valores en el eje medidor:
+
+- VALOR MINIMO: 0
+- VALOR MAXIMO: 75000
+- VALOR DESTINO: 45000
+
+Insertar una segmentación del campo CLIENTE.
+
+Insertar una tabla que sume el IMPORTE CLIENTE de cada CLIENTE.
+
+Cambiar las interacciones para que la segmentación sólo filtre el medidor y no la tabla y que la tabla no filtre el medidor.
+
+Filtrar el medidor por el CLIENTE-004.
