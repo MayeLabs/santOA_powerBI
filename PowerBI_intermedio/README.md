@@ -104,3 +104,8 @@ Nota: Para seleccionar varios, usar ctrl.
 En una nueva página de informe, agregar un gráfico de líneas que muestre, por año y trimestre de la FECHA CURSO, la suma del IMPORTE CLIENTE (en el eje principal) y el recuento de CURSO (Eje Y secundario). 
 
 Después, dividir el gráfico por COMERCIAL. 
+
+### Ejercicio 003
+
+Inserta en una nueva página de informe, un mapa coroplético en el que agregarás a la ubicación el campo PAIS que crearemos, un formato condicional donde se pondrán en color verde los países con suma de duración menor de 3000 y en color azul los países con suma de duración mayor o igual a 3000. 
+
