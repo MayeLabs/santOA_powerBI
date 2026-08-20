@@ -85,6 +85,24 @@ El gráfico tiene las áreas:
 - Longitud
 - Información sobre la herramienta: Muestra la información en el tooltip de un campo totalizado.
 
+### Mapa
+
+Este gráfico, permite respresentar datos geográficos mediante puntos o burbujas posicionados segun ubicaciones especificas.
+
+Cada burbuja se coloca en el lugar geográfico correspondiente y puede variar de tamaño y color para reflejar el valor de una medida o categoría
+
+> Facilita el análisis visual de patrones geográficos
+
+Icono de mapa mundi.
+
+Las áreas que muestra dicho gráfico son:
+
+- Ubicación
+- Leyenda
+- Latitud
+- Longitud
+- Tamaño de la burbuja: Aca se coloca el campo a totalizar, que da el tamaño a la burbuja.
+
 ## Prácticas
 
 ### Ejercicio 001
