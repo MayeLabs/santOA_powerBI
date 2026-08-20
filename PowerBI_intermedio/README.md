@@ -103,6 +103,22 @@ Las áreas que muestra dicho gráfico son:
 - Longitud
 - Tamaño de la burbuja: Aca se coloca el campo a totalizar, que da el tamaño a la burbuja.
 
+## Gráfico medidor
+
+Se usa para mostrar el valor de un avance respecto a un objetivo. Es ideal para representar indicadores claves de rendimiento (KPI) y facilita la comparación entre un valor actual o un valor de referencia o meta.
+
+Para darle sentido debe llevar un filtro o una segmentación.
+
+Muestra las siguientes áreas:
+
+- VALOR: Campo a totalizar por el que se realizará la medición del objetivo. 	
+- VALOR MÍNIMO: Campo que contiene el valor más bajo que deseamos que tenga el medidor.
+- VALOR MÁXIMO: Campo que contiene el valor más alto que deseamos que tenga el medidor.
+- VALOR DESTINO: Campo que tiene el valor del objetivo a alcanzar en el medidor. 
+ 	 	
+
+
+
 ## Prácticas
 
 ### Ejercicio 001
