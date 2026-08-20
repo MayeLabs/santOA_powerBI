@@ -103,7 +103,7 @@ Las áreas que muestra dicho gráfico son:
 - Longitud
 - Tamaño de la burbuja: Aca se coloca el campo a totalizar, que da el tamaño a la burbuja.
 
-## Gráfico medidor
+### Gráfico medidor
 
 Se usa para mostrar el valor de un avance respecto a un objetivo. Es ideal para representar indicadores claves de rendimiento (KPI) y facilita la comparación entre un valor actual o un valor de referencia o meta.
 
@@ -116,9 +116,41 @@ Muestra las siguientes áreas:
 - VALOR MÁXIMO: Campo que contiene el valor más alto que deseamos que tenga el medidor.
 - VALOR DESTINO: Campo que tiene el valor del objetivo a alcanzar en el medidor. 
  	 	
+### Interacciones
+
+Es la forma que interactuan los gráficos entre si, al selccionar uno u otro, se aplica a todos.
+
+Ejemplo, cuando filtramos una segmentacion se aplica sobre los que esten.
+
+Si se da el caso, de que no queremos que desde un informe, se fuese a filtrar otro informe:
+
+1. Seleccionar un informe
+2. Ir a la fecha FORMATO 
+3. Pulsar botón EDITAR INTERACCIONES
+
+![Interacciones](/img/interacciones.png)
 
 
+> Se activa los iconos que habilitan interacciones - Para desactivar el prohibido y para el caso contrario el otro.
+![Editar interacciones](/img/iconos_editarInteracciones.png)
 
+Se muestra dos icono uno de gráfica y un prohibido, para quitar la interacción presionar el icono de prohibido.
+
+---
+Cuando tenemos diferentes gráficos dentro de una misma página de informes, estos interaccionan entre ellos, es decir, seleccionando un elemento de un gráfico, se filtran todos los informes de la misma página. 
+
+En algunos casos, no queremos que se filtre desde algún gráfico ningún otro informe, es ahí cuando tenemos que modificar las interacciones, es decir, la forma de interactuar los informes de una misma página.
+
+Para modificar las interacciones, debemos tener seleccionado un informe. A continuación, ir a la FICHA FORMATO y pulsar EDITAR INTERACCIONES: 
+ 
+
+La forma que tendríamos de proceder sería: seleccionar el gráfico al que queremos modificar las interacciones, y con cada uno de los otros gráficos que no queremos que interactúe (que no queremos que filtre), pulsamos el botón NINGUNO (icono de prohibido)
+
+Si, por el contrario, hemos quitado una interacción y la queremos volver a colocar, seleccionamos el informe a modificar, y sobre el informe que queremos que interactúe, pulsamos el botón FILTRO (icono de gráfica)
+
+Una vez que hayamos modificado las interacciones, podemos ocultar sus iconos yendo nuevamente a la FICHA FORMATO y desactivando el botón EDITAR INTERACCIONES. 
+---
+ 
 ## Prácticas
 
 ### Ejercicio 001
