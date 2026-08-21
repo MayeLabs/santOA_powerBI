@@ -401,3 +401,34 @@ Sobre la columna FECHA GASTO de la tabla T_GASTOS, crear las siguientes columnas
 * DIAS PASADOS: restar campos: FECHA PAGADO – FECHA GASTO.
 * TRIM GASTO: obtener el trimestre del año de la FECHA GASTO y que por delante de * cada trimestre se muestra el texto: "Trim." (Trim. 1, Trim. 2, Trim. 3 y Trim. 4).
 
+### Ejercicio 008
+Importar las tablas T_CLIENTES, T_SECTORES, T_CONCEPTOS y T_FACTURAS del fichero MODELO DATOS FACTURAS e ir directamente al editor de Power Query.
+
+En dicho modelo, se registran facturas en la tabla T_FACTURAS, que es donde se realiza toda la gestión que queremos analizar. Las facturas correspondientes a clientes que están guardados en la tabla T_CLIENTES y corresponden a conceptos que están registrados en la tabla T_CONCEPTOS.
+
+Respecto a la tabla T_CLIENTES, a cada cliente se le asigna un sector, dichos sectores corresponden a los que están en la tabla T_SECTORES, pero ambas tablas tienen dos columnas coincidentes: el código del sector y el tipo del sector. Combinar las tablas:
+
+* T_CLIENTES – T_SECTORES: mostrando en la tabla T_CLIENTES los campos TIPO SECTOR y DESCUENTO de la tabla T_SECTORES.
+* T_FACTURAS – T_CLIENTES: mostrando en la tabla T_FACTURAS los campos: NOMBRE, SECTOR Y DESCUENTO de la tabla T_CLIENTES.
+* T_FACTURAS – T_CONCEPTOS: mostrando en la tabla T_FACTURAS los campos CONCEPTO e IVA de la tabla T_CONCEPTOS.
+
+Crear una tabla con el nombre TIPO CONCEPTO donde habrá dos columnas: CONCEPTO y TIPO con los siguientes registros:
+
+|CONCEPTO |TIPO     |
+|---------|----------|
+|CON-001  |INTERNO   |
+|CON-002  |INSERNO   | 
+|CON-003  |INSERNO   | 
+|CON-004  |INSERNO   | 
+|CON-005  |INSERNO   | 
+|CON-006  |EXTERNO   | 
+|CON-007  |EXTERNO   | 
+|CON-008  |EXTERNO   | 
+|CON-009  |EXTERNO   | 
+|CON-010  |EXTERNO   | 
+
+Combinar la tabla TIPO CONCEPTO con la tabla T_FACTURAS y mostrar en T_FACTURAS el campo TIPO de TIPO CONCEPTO. 
+
+Deshabilitar la carga de todas las tablas excepto la tabla T_FACTURAS. 
+
+Cargar la tabla facturas a Power BI. 
