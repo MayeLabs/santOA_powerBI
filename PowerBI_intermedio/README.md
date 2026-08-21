@@ -306,6 +306,11 @@ Pulsándolo, nos muestra la lista de campos de la tabla T_CODIGOS, que es la tab
 
 Habrá que dejar activado únicamente el check de los campos que se desean mostrar en la tabla T_VENTAS: 
 
+### Combinar consultas por más de una columna coincidente
+
+Se selecciona la tabla, se va a ficha TRANSFORMAR > COMBINAR y una vez se abre la ventana emergente, entonces, se seleccionan varias columnas usando ctrl
+
+![Combinar varios](/img/combinar_varios.png)
 
 ## Prácticas
 
