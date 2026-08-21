@@ -198,7 +198,42 @@ Si hemos grabado un marcador, y algo no ha quedado como se esperaba, ponemos el 
 
 ***¿Cómo ocultar gráficas ?***
 
-![alt text](image.png)
+![alt text](/img/image.png)
+
+## Power Query
+
+Para ingresar a Power Query
+![Power Query](/img/ingresar_powerQuery.png)
+
+### Transformaciones de texto
+
+Las columnas textos, se pueden transformar desde 
+1. Ficha TRANSFORMAS > Grupo de botones COLUMNA DE TEXTO
+![Forma 1](/img/1_tranformar_texto.png)
+2. Ficha AGREGAR COLUMNA > Grupo de botones DE TEXTO
+![Forma 2](/img/2_transformar_texto.png)
+
+Las principales transformaciones de texto:
+
+- Dividir columna: Solo esta en la ficha TRANSFORMAR, al seleccionar la columna, se ven diferentes opciones:
+    - Por delimitador
+        - Delimitador situado más a la izquierda: el texto hasta el primer separador se iría a la primera columna y el texto detrás del primer separador a la segunda columna. 
+        - Delimitador situado más a la derecha: el texto hasta el último separador se quedaría en la primera columna y que esté detrás del último en la siguiente columna. 
+        - Cada aparición del delimitado: cada vez que aparezca el carácter separador en el texto seleccionado se irá generando una nueva columna. 
+    - Por número de caracteres
+    - Por posiciones: La posición 0, es el primer caracter
+    - De minúsculas a mayúsculas: divide el texto seleccionado por las transiciones que haya entre letras minúsculas y letras mayúsculas. 
+    - De mayúsculas a minúsculas: divide el texto seleccionado por las transiciones que haya entre letras mayúsculas y letras minúsculas. 
+    - De dígito a no dígito: permite dividir el texto seleccionado por las transiciones que haya entre caracteres numéricos a no numéricos. 
+    - De no dígito a dígito: divide el texto seleccionado por las transiciones que haya entre caracteres no numéricos a numéricos. 
+ 
+ - Formato:
+    - Minúsculas: transforma el texto de la columna seleccionada a letras minúsculas. 
+    - Mayúsculas: transforma el texto de la columna seleccionada a letras mayúsculas. 
+    - Poner en mayúscula cada palabra: pone en mayúscula la primera letra de cada palabra. 
+    - Recortar: elimina espacios sobrantes del texto del campo seleccionado. 
+    - Limpiar: elimina los caracteres no imprimibles del texto del campo seleccionado. 
+    - Agregar prefijo: permite agregar un texto por delante de cada elemento del campo seleccionado.
 
 
 
@@ -248,3 +283,12 @@ Insertar una tabla que sume el IMPORTE CLIENTE de cada CLIENTE.
 Cambiar las interacciones para que la segmentación sólo filtre el medidor y no la tabla y que la tabla no filtre el medidor.
 
 Filtrar el medidor por el CLIENTE-004.
+
+### Ejercicio 006
+
+Eliminar todos los pasos creados a la tabla T_GASTOS en Power Query, dejando únicamente los pasos: ORIGEN, NAVEGACIÓN y TIPO CAMBIADO.
+
+1. Poner la columna NOMBRE con la primera letra mayúscula.
+2. Poner la columna APELLIDOS con todas las letras mayúsculas.
+3. Juntar las columnas: APELLIDOS, NOMBRE y nombrar dicha columna como: NOMBRE EMPLEADO.
+4. Agregar una columna con el nombre EQUIPO y que extraiga los dos primeros caracteres del campo COD EMPLEADO.
