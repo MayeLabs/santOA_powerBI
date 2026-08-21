@@ -236,7 +236,40 @@ Las principales transformaciones de texto:
     - Agregar prefijo: permite agregar un texto por delante de cada elemento del campo seleccionado.
 
 
+### Transformaciones de fechas
 
+Se pueden realizar tanto de la ficha de TRANSFORMAR como en la ficha de AGREGAR COLUMNA
+
+Para trabajar con las fechas, utilizamos el botón FECHA, que está situado en la en ambas fichas en el grupo de botones DE FECHA Y HORA. Veremos las principales transformaciones de texto.
+
+Al seleccionar la fecha se muestran las siguientes opciones:
+
+* Antiguedad: Muestra el número de días que han pasado desde la fecha.
+* Solo fecha: Si tiene fecha y hora, solo extrae la fecha.
+* Analizar: Al tener un campo tratado por pwer BI como tipo texto, lo convierte en fecha automáticamente.
+* Año: 
+    * Año: Devuelve el año.
+    * Inicio de año: Devuelve el 1 de enero de cada año de la fecha.
+    * Final de año: Devuelve el 31 de diciembre de cada año de la fecha. 
+* Mes: 
+    * Mes: Devuelve el mes.
+    * Inicio del mes: El día 1 de cada mes de cada fecha.
+    * Fin de mes: Devuelve el ultimo día de cada mes de la fecha.
+    * Días del mes: Devuelve el numero de dias que tiene el mes correspondiente a la fecha
+    * Nombre del mes.
+* Trimestre:
+    * Trimestre del año: El número trimestre de la fecha del 1 al 4.
+    * Inicio del trimestre: La fecha del primer día de cada trimestre.
+    * Final trimestre: la fecha del ultimo dia de cada trimestre.
+* Semana:
+    * Semana del año.
+    * Semana del mes.
+    * Inicio de la semana.
+    * Final de la semana.
+* Restar días: Número de dias existentes entre dos fechas.
+* Combinar fecha y hora.
+* Más antigua: De los campos fechas que se tenga selecccionados deevuelve la fecha más antigua.
+* Más reciente: De los campos fechas que se tenga seleccionados devuelve el más reciente.
 
 ## Prácticas
 
@@ -292,3 +325,11 @@ Eliminar todos los pasos creados a la tabla T_GASTOS en Power Query, dejando ún
 2. Poner la columna APELLIDOS con todas las letras mayúsculas.
 3. Juntar las columnas: APELLIDOS, NOMBRE y nombrar dicha columna como: NOMBRE EMPLEADO.
 4. Agregar una columna con el nombre EQUIPO y que extraiga los dos primeros caracteres del campo COD EMPLEADO.
+
+### Ejercicio 007
+Sobre la columna FECHA GASTO de la tabla T_GASTOS, crear las siguientes columnas con el nombre que se va indicando:
+
+* MES GASTO: obtener el nombre del mes de la FECHA GASTO con la primera letra mayúscula.
+* AÑO GASTO: obtener el año de la FECHA GASTO.
+* DIAS PASADOS: restar campos: FECHA PAGADO – FECHA GASTO.
+* TRIM GASTO: obtener el trimestre del año de la FECHA GASTO y que por delante de * cada trimestre se muestra el texto: "Trim." (Trim. 1, Trim. 2, Trim. 3 y Trim. 4).
