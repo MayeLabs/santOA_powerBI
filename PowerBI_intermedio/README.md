@@ -351,6 +351,45 @@ Para dar la orden de anexar consultas, se hace desde la FICHA INICIO, en el grup
 * Anexar consultas: Se vuelcan los registros sobre los de la tabla seleccionada en el panel de consultas.
 * Anexar consultas para crear una nueva: Se creará una nyeva tabla con todos los registros de las tablas que se vayan a anexar.
 
+### Columnas personalizadas
+
+Es una nueva columna, que se crea a partir de otras columnas de la misma tabla, usando formulas simples:
+
+Sirve para: 
+
+* Realizar cálculos básicos (sumas, restas, multiplicaciones). 
+* Unir texto de varias columnas. 
+* Crear identificadores únicos o etiquetas. 
+* Preparar los datos para análisis más claros y eficientes. 
+* Antes de crear una columna personalizada, se debe tener en cuenta lo siguiente: 
+
+Antes se debe tener en cuenta:
+
+1. Solo se pueden usar columnas de la misma tabla, Power Query no permite usar columnas de otras tablas directamente en una columna personalizada. Todo debe venir de la tabla en la que estamos calculando. Si se necesitan columnas de otra tabla, primero deberíamos combinarlas.
+
+2. Los tipos de datos deben ser compatibles, de tal modo que si vamos a sumar o multiplicar, las columnas han de ser numéricas. Si mezclamos tipos de datos, por ejemplo número y texto o fecha y número, puede dar error el cálculo.
+
+
+3. Usaremos los operadores simples como: suma, resta, multiplicación, división y operador de texto (&).
+
+4. La columna se calcula fila por fila, cada fila se evalúa de forma independiente, usando los valores de la misma.
+
+***¿Cómo se crea?***
+
+Ir a ficha AGREGAR COLUMNA > COLUMNA PERSONALIZADA
+
+![alt text](/img/image_5.png)
+
+Los operadores que podemos utilizar son: 
+
+* +: para sumar 
+* -: para restar 
+* *: para multiplicar 
+* /: para dividir 
+* &: para juntar texto. 
+ 
+
+
 ## Prácticas
 
 ### Ejercicio 001
