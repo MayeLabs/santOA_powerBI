@@ -271,6 +271,42 @@ Al seleccionar la fecha se muestran las siguientes opciones:
 * Más antigua: De los campos fechas que se tenga selecccionados deevuelve la fecha más antigua.
 * Más reciente: De los campos fechas que se tenga seleccionados devuelve el más reciente.
 
+### Combinar consultas
+
+
+A través de la orden de combinar consultas, podemos mover a una tabla campos o columnas que se encuentran en otra, lo que va a mejorar la estructura de los datos para que sean analizados en nuestros gráficos. 
+
+Cuando importamos al modelo de datos más de una tabla, lo habitual es que una de ellas, sea la tabla principal en la que se desarrolla toda la gestión que vayamos a analizar. El resto de las tablas suelen tener información referente a la tabla principal, para completarla con información complementaria. 
+
+En algunos casos nos interesa que la tabla principal tenga columnas que tienen el resto de las tablas para completar toda la información de los campos clave. 
+
+Para llevar dichas columnas a la tabla importante utilizaremos la orden de combinar consultas. 
+
+En la ficha de INICIO en el grupo de botones COMBINAR, pulsamo el botón COMBINAR CONSULTAS, se desplega las siguientes acciones:
+
+* Combinar consultas
+* Combinar consultas para crear una nueva: Se creara una tabla en el panel de consultas con los campos registrados de la tabla seleccionada y las columnas a mostrar de la otra.
+
+Una vez se de clic en INCICIO > COMBINAR, se abrira una ventana emergente, donde debemos seleccionar la tabla y la columna
+
+1.  ![Combinar 1](/img/combinar_1.png)
+
+2.  ![Combinar 2](/img/combinar_2.png)
+
+3. Una vez se combine, se muestra una nueva columna, llamada columna combinada
+
+![Combinar 3](/img/combinar_3.png)
+
+4. La columna combinada en vez de tener un botón de filtro a su derecha, muestra el botón de combinar 
+
+Pulsándolo, nos muestra la lista de campos de la tabla T_CODIGOS, que es la tabla con la que hemos combinado la principal.
+![Combinar 4](/img/combinar_4.png)
+
+> Se deja activado los checks de lis campos que se desean mostrar en la tabla.
+
+Habrá que dejar activado únicamente el check de los campos que se desean mostrar en la tabla T_VENTAS: 
+
+
 ## Prácticas
 
 ### Ejercicio 001
@@ -333,3 +369,4 @@ Sobre la columna FECHA GASTO de la tabla T_GASTOS, crear las siguientes columnas
 * AÑO GASTO: obtener el año de la FECHA GASTO.
 * DIAS PASADOS: restar campos: FECHA PAGADO – FECHA GASTO.
 * TRIM GASTO: obtener el trimestre del año de la FECHA GASTO y que por delante de * cada trimestre se muestra el texto: "Trim." (Trim. 1, Trim. 2, Trim. 3 y Trim. 4).
+
