@@ -312,6 +312,11 @@ Se selecciona la tabla, se va a ficha TRANSFORMAR > COMBINAR y una vez se abre l
 
 ![Combinar varios](/img/combinar_varios.png)
 
+### Crear una tabla
+
+Dentro de Power Query, podemos crear tablas para realizar agrupaciones de elementos de algún campo.
+
+
 ## Prácticas
 
 ### Ejercicio 001
