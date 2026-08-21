@@ -337,6 +337,19 @@ Para cargar únicamente esta, se colocará el puntero del ratón sobre una de la
 
 ![alt text](/img/image-3.png)
 
+### Anexar consulta
+
+Se puede dar el caso en el que los datos que queremos analizar estén en diferentes tablas y queramos consolidar todos en una misma tabla para poder mostrar los informes del conjunto de datos. 
+
+ Antes de dar la orden de anexar consultas, debemos tener en cuenta las siguientes circunstancias de las tablas a anexar: 
+
+Los campos que tengan en común las tablas que vayamos a anexar, han de tener el mismo nombre, con los mismos caracteres y coincidiendo las mayúsculas y minúsculas. 
+No es necesario que en cada tabla los campos estén en el mismo orden. 
+Puede haber tablas que tengan campos que las otras no los tengan, no es ningún problema, en ese caso los registros de la tabla en dicho campo vendrán con su valor y los registros de las tablas que no disponen de la columna tendrán el valor nulo o vacío. 
+Para dar la orden de anexar consultas, se hace desde la FICHA INICIO, en el grupo de botones COMBINAR, el botón ANEXAR CONSULTAS, se muestran dos opciones:
+
+* Anexar consultas: Se vuelcan los registros sobre los de la tabla seleccionada en el panel de consultas.
+* Anexar consultas para crear una nueva: Se creará una nyeva tabla con todos los registros de las tablas que se vayan a anexar.
 
 ## Prácticas
 
@@ -414,13 +427,13 @@ Respecto a la tabla T_CLIENTES, a cada cliente se le asigna un sector, dichos se
 
 Crear una tabla con el nombre TIPO CONCEPTO donde habrá dos columnas: CONCEPTO y TIPO con los siguientes registros:
 
-|CONCEPTO |TIPO     |
+|CONCEPTO |TIPO      |
 |---------|----------|
 |CON-001  |INTERNO   |
-|CON-002  |INSERNO   | 
-|CON-003  |INSERNO   | 
-|CON-004  |INSERNO   | 
-|CON-005  |INSERNO   | 
+|CON-002  |INTERNO   | 
+|CON-003  |INTERNO   | 
+|CON-004  |INTERNO   | 
+|CON-005  |INTERNO   | 
 |CON-006  |EXTERNO   | 
 |CON-007  |EXTERNO   | 
 |CON-008  |EXTERNO   | 
