@@ -316,6 +316,27 @@ Se selecciona la tabla, se va a ficha TRANSFORMAR > COMBINAR y una vez se abre l
 
 Dentro de Power Query, podemos crear tablas para realizar agrupaciones de elementos de algún campo.
 
+se hace desde la ficha INICIO > ESPECIFICAR DATOS
+
+![alt text](/img/image_4.png)
+
+Una vez se ingresa se muestra un cuadro de diálogo
+
+![alt text](/img/image-1.png)
+
+* Para agregar columnas, se pulsa el botón + situado a la derecha de Columna1. 
+* Para cambiar el nombre de una columna se hacen dos clics sobre el título de la columna a modificar. 
+* Para eliminar una columna sobre ella se pulsa el botón derecho y se selecciona la opción: eliminar. Igual sobre una fila pulsando sobre el número de la fila. 
+
+#### Deshabilitar la carga de tablas
+Cuando se han combinado tablas, o por cualquier otro motivo que podamos tener, es posible que haya tablas que necesitamos tener en Power Query, pero que no se carguen en Power BI.  
+
+Si este es el caso, se tendrá que deshabilitar la carga de aquellas tablas que no se desea que se muestren en Power BI, ya que no formarían parte de ningún informe. 
+
+Para cargar únicamente esta, se colocará el puntero del ratón sobre una de las que se quiera deshabilitar la carga y pulsando el botón derecho del ratón desactivaremos la opción habilitar carga
+
+![alt text](/img/image-3.png)
+
 
 ## Prácticas
 
