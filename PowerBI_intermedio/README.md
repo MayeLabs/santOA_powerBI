@@ -387,9 +387,54 @@ Los operadores que podemos utilizar son:
 * *: para multiplicar 
 * /: para dividir 
 * &: para juntar texto. 
- 
 
+### Columnas condicionales
 
+Es una columna nueva de power Bi, que calcula fila a fila reglas de tipo condicional, si ... entonces ... sino ..., se crea desde la interfaz son escribir M e internamente genera una expresion if, then else, que clasifica datos según condiciones. Este tipo de columna, sirve para:
+
+* Clasificar regitros
+* Etiquetas estados
+* Marcar excepciones
+
+En las columnas condicionales, debemos tener en cuenta:
+
+- Tipos de datos correctos:
+
+    Asegúrate que el tipo de dato de la columna que vamos a utilizar en el cálculo de la nueva es el correcto:
+
+    Números para comparaciones numéricas. 
+    Fecha/Fecha-hora para comparaciones temporales. 
+    Texto para “contiene/empieza por/termina en”. 
+
+- Resultados con único tipo:
+    
+    Todas las salidas de tus reglas (y la cláusula “De lo contrario”) deben ser del mismo tipo de dato.
+
+- Orden de evaluación:
+    
+    Las reglas se evalúan de arriba a abajo y se detienen en la primera que cumple. Coloca primero las más específicas.
+
+- Nulos y vacíos:
+    
+    En Power Query, los valores en blanco suelen ser null. A veces llegan como cadena vacía "". Si te afecta, contempla ambos casos en las reglas o normaliza antes. 
+
+- Ámbito de columnas:
+    
+    La columna condicional usa columnas de la misma tabla. Si necesitas datos de otra tabla, deberíamos combinar las tablas antes de realizar la columna. 
+
+- Texto y mayusculas/minusculas:
+    
+    Hay que tener en cuenta que Power Query diferencia las mayúsculas de las minúsculas, por lo que si el campo es texto, debemos de asegurarnos que debemos de tener estandarizado este tipo de formatos.
+
+*** ¿ Cómo crear una columna condicional ? ***
+
+Ir a la ficha AGREGAR COLUMNA > grupos de botones GENERAL > COLUMNA ADICIONAL
+
+Ejemplo:
+
+![alt text](/img//image_6.png)
+
+> Para hacer sumas o restas de días sobre fechas, primero se pasa número y luego, se convierte a fecha nuevamente.
 ## Prácticas
 
 ### Ejercicio 001
