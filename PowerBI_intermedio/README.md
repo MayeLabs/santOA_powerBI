@@ -564,9 +564,87 @@ Con el modelo de datos estrella se reduce la cantidad de relaciones y se simplif
 
 También, en este modelo de datos, se realizarán los filtros de manera unidireccional, es decir, desde las tablas de dimensiones se aplicarán los filtros a la tabla de hechos. 
 "
-La estructura del modelo de datos estrella, es el que se realizo en el ejercicio 011
+Un ejemplo de la estructura del modelo de datos estrella, es el que se realizo en el ejercicio 011
 
 ![alt text](/img/image_18.png)
+
+
+### Estructura del modelo de datos estrella
+
+Antes de comenzar a crear el modelo de datos en Power BI, es importante realizar una correcta limpieza y transformación de los datos.  
+
+Esto incluye eliminación de datos duplicados, de valores en blanco y ajustar bien los tipos de datos, tarea que se realiza en Power Query. 
+
+Una vez que están las tablas bien estructuradas se cargarán en Power BI para crear el modelo de datos, donde es aconsejable, tener claras las relaciones a establecer y el modelo a crear, donde se valorará: 
+
+* Quién es la tabla de hechos y las columnas coincidentes con las tablas de dimensiones. 
+* Cuáles son las tablas de dimensiones y el campo coincidente de cada una de ellas respecto a la tabla de hechos. 
+* Asegurar que los elementos de las columnas coincidentes de cada una de las tablas de dimensiones no se repitan. 
+* Chequear que el tipo de dato de las columnas coincidentes de la tabla de hechos con las tablas de dimensiones sea el mismo. 
+* Estar seguros de que las tablas de dimensiones aportan información relevante sobre los campos clave de la tabla de hechos. 
+
+Una vez creado el modelo de datos, a la hora de utilizar los campos en los informes, debemos de tener en cuenta que: 
+
+* Los campos por los que se vayan a agrupar los elementos o a filtrar los datos, se agregarán de las tablas de dimensiones (siempre que se dispongan de ellos). 
+* Los campos a totalizar en cualquier informe siempre se agregan de la tabla de hechos. 
+* Los campos fecha para ver informes de tiempo o filtros en el tiempo se seleccionarán de la tabla de hechos. 
+
+### Modelo de datos copo de nieve
+
+El modelo de datos copo de nieve, está formado por una tabla de hechos, pero por tablas de dimensiones normalizadas, es decir, que en vez de tener cada dimensión en una única tabla, los atributos se dividen en varias tablas relacionadas, por ejemplo, la dimensión de clientes está dividida en el país donde tiene dicha delegación. 
+
+***Este tipo de modelo, no ofrece un buen rendimiento por los siguientes motivos:***
+
+* *Complejidad en las relaciones:* La necesidad de múltiples uniones entre tablas de dimensión normalizadas dificulta la comprensión y el mantenimiento del modelo. 
+* *Impacto en el rendimiento:* Al tener que realizar más relaciones para tener consolidada la información de una dimensión, el tiempo de procesamiento de las consultas se incrementa. 
+* *Dificultad en el diseño:* Un modelo más complejo puede dar problemas al configurar las relaciones en Power BI, lo que podría llevar a resultados inesperados en las visualizaciones y análisis, dificultando la creación de informes interactivos. 
+* *Mayor curva de aprendizaje*: Para usuarios que no son expertos en modelado de datos, comprender y trabajar con un modelo de datos copo de nieve puede ser más complejo. 
+
+> A la hora de crear relaciones entre las tablas, se debe tratar siempre de obtener un modelo estrella. Apoyarse en combinar consultas de power query, para consolidar las tablas normalizadas.
+
+### Combinar consultas frente a relacionar tablas
+
+Es importante, tener claro en que caso se debe combinar una consulta, para llevar una tabla de hecho a la tabla de dimensiones, y cuándo es mejor relacionar tabla de hechos y dimensiones.
+
+Cada una tiene sus ventajas
+
+| Combinar Consultas        | Relacionar tablas     |
+|---------------------------|-----------------------|
+| Cuando se necesita tener toda la inf. en un solo lugar | util, cuando los datos ya están limpios y estructurados y se necesita definir la conexión|
+| Tablas diferentes con un único conjuntos de datos      | Las tablas en su forma original para permitir análisis dinámicos (ventaja de filtros, segmentaciones, cálculos).|
+| Tener datis en una misma tabla, reduce la complejidad y da mejor comprensión al permitir eliminar filas o columnas| Escenarios donde cada tabla representa una entidad que completa a la tabla de hechos|
+| Las transformaciones son más potentes y felxibles, al ejecutarse sobre una tabla | Facilita la comprensión y el entendimiento |
+| Evitar tener relaciones complejas dentro del modelo | |
+
+***Notas***
+
+*Comparativa: Modelo de una sola tabla vs. Modelo Estrella en Power BI*
+
+| **Modelo de una sola tabla** (Desnormalizado)          | **Modelo Estrella** (Normalizado)                     |
+|--------------------------------------------------------|-------------------------------------------------------|
+| Datos **ya limpios y consolidados**.                   | Datos **normalizados**, con relaciones definidas.     |
+| Ideal para **análisis simples** o prototipos.          | Ideal para **dashboards complejos** y reportes.       |
+| Menos flexibilidad para filtrar por entidad.           | Mayor flexibilidad para **segmentar por dimensión**.  |
+| Más rápido de construir (sin relaciones).              | Más escalable y fácil de mantener a largo plazo.      |
+| Puede volverse **repetitiva** si hay muchos datos.     | Evita la redundancia (cada dato se guarda una sola vez). |
+| Se usa cuando la fuente ya viene consolidada (ej: Excel). | Se usa cuando tienes tablas relacionales (SQL, ERP).  |
+| **Ventaja**: No necesitas crear relaciones.            | **Ventaja**: Aprovechas funciones DAX como `CALCULATE`, `FILTER` y `USERELATIONSHIP`. |
+| **Desventaja**: Puede ser lento si hay millones de filas. | **Desventaja**: Requiere más tiempo de modelado inicial. |
+🔹 Dato clave: Power BI tiene un “Analizador de rendimiento” y un “Analizador de modelo” que te dicen si tu modelo es eficiente. El modelo estrella suele dar mejor rendimiento porque:
+
+Reduce el tamaño del archivo (no repites nombres de clientes).
+Acelera las consultas (filtra por dimensiones antes de tocar la tabla de hechos).
+
+" ***cuándo es necesario hacer uno u otro? ***
+
+Generalmente, Power BI, cuando maneja volúmenes altos de datos y estos están divididos en una gran cantidad de campos que detallan toda la información de cada dato, trabaja mejor con relaciones, teniendo los campos divididos en sus tablas de dimensiones correspondientes y girando alrededor de la tabla de hechos, que tener toda la información en una única tabla, donde se pierden y se duplican los datos entre múltiples columnas y se repite muchas veces la misma información. 
+
+Existen diferentes escenarios en los que la mejor opción sería combinar consultas:
+
+* Cuando la tabla de hechos y la tabla de dimensiones tienen más de una columna coincidente, la relación sólo se puede realizar a través de un único campo coincidente de cada tabla. En ese caso, la mejor solución sería combinar ambas tablas en Power Query. 
+* Si el modelo de datos que se va a generar es un modelo de datos copo de nieve, no sería óptimo para trabajar con él en Power BI, por lo que se debe transformar en un modelo de datos estrella.
+* Si la tabla de dimensiones sólo aporta un único campo con valor a la tabla de hechos. "
+
 
 ## Prácticas
 
