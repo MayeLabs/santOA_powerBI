@@ -511,6 +511,61 @@ se selecciona la opción Combinar y transformar datos:
 >
 >Esto lo que haría sería generar tantas tablas en Power Query como importaciones de carpetas se hayan realizado. Para que luego todas estén en una misma tabla, habría que consolidarlas mediante la orden anexar consultas. 
 
+## Modelo de datos
+
+Usualmente los datos se encuentran en más de una tabla. La información que contienen suelen ser relacionadas, generalmente se tiene una tabla principal, que posee toda la información relevante que queremos analizar, es lo que se denomina tabla de hechos, y luego hay otras tablas que aportan valor a la tabla de hechos, completando campos claves, lo que se llama tabla de dimensiones.
+
+Podemos crear un modelo de datos dimensional, para obtener el mejor rendimiento en los informes y mejor calidad en el filtrado de datos.
+
+Para poder relacionar dos tablas, ambas deben tener una columna coincidente.
+
+En la tabla de dimensiones, los elementos de la col. coincidente no se pueden repetir, ya que es una especie de clave primaria que identifica cada uno de los valores que describe, y asi poder establecer una relación de uno a muchos, para no duplicar resultados.
+
+Sin embargo en la tabla de hechos, los elementos de la columna coincidente se repetirán tantas veces como operaciones se hayan realizado.
+
+Tabla principal --> Tabla externa o de muchos o estrella
+
+> Se puede dar el caso, que las tablas no tengan columna coincidente directamente, pero realizando alguna transformación, desde Power Query, extrayendo texto, combinando columnas, etc. se pueda obtener la columna coincidente en ambas. 
+>
+> Debemos tener en cuenta, cuando relacionamos dos tablas, también podríamos combinarlas, es decir, o bien combinamos o bien relacionamos. Tenemos que decidir en cada caso cuándo es mejor una o la otra.  
+
+### Relacionar dos tablas
+
+Las relaciones se realizan siempre desde Power BI, a través de la Vista Modelo. 
+
+Para crear la relación, se hace a través del nombre de la columna coincidente de cada tabla. Se puede hacer de las siguientes maneras: 
+
+1. Se coloca el puntero del ratón en una de las dos tablas sobre el nombre de la columna coincidente y se arrastra hasta el nombre de la columna coincidente de la otra tabla. 
+
+2. Otra forma de realizar la relación, en la vista modelo, a través de la FICHA INICIO, en el GRUPO DE BOTONES RELACIONES, se pulsa el botón: ADMINISTRAR RELACIONES
+
+    Donde se tendrá que seleccionar en los cuadros desde la tabla y a la tabla, las tablas a relacionar. Es indiferente el orden en el que se seleccionen cada una de las tablas:
+
+> Un detalle importante a tener en cuenta es que, si las columnas coincidentes de cada tabla que se va a relacionar tuvieran el mismo nombre, Power BI detectaría automáticamente la relación, y al entrar a la vista modelo, las tablas se encontrarían relacionadas automáticamente. 
+
+ #### Se puede modificar o eliminar una tabla.
+
+se puede acceder en la vista modelo nuevamente al administrador de relaciones, pulsando el botón Administrar relaciones de la ficha inicio, se activa el check de la relación a modificar y se pulsaría el botón EDITAR o ELIMINAR de la ventana
+
+También la podemos modificar pulsando sobre la línea de la relación el botón derecho y en el menú emergente seleccionar la opción ELIMINAR o PROPIEDADES 
+
+### Modelo de datos estrella
+
+"
+El modelo de datos que mejor funciona en Power BI y que no ralentiza la aplicación, es el modelo de datos estrella, el cual está formado por una tabla de hechos y tablas de dimensiones completan los ítems fundamentales de la tabla de hechos. 
+
+El modelo de datos estrella, organiza la información en una estructura sencilla y optimizada para consultas analíticas.  
+
+Se compone de una tabla central (tabla de hechos) que almacena los datos a cuantificar y en torno a la que giran todos los informes que se obtengan del modelo, y varias tablas de dimensiones. 
+
+La tabla de hechos es la que siempre quedará en el lado de muchos y estrella de cada relación, mientras que las tablas de dimensiones estarán en el lado de 1.
+
+Con el modelo de datos estrella se reduce la cantidad de relaciones y se simplifican las uniones entre tablas, lo que se traduce en mayor velocidad en la ejecución de las consultas, lo que aumentará el rendimiento y la eficacia del modelo. 
+
+También, en este modelo de datos, se realizarán los filtros de manera unidireccional, es decir, desde las tablas de dimensiones se aplicarán los filtros a la tabla de hechos. 
+"
+
+
 
 ## Prácticas
 
