@@ -502,7 +502,9 @@ se selecciona la opción Combinar y transformar datos:
 
 ![alt text](/img/image_16.png)
 
-La importación se realiza exactamente igual que la del CSV, solo que, en la ventana de combinar, hay que seleccionar la tabla u hoja que tienen en común todos los archivos. 
+**La importación se realiza exactamente igual que la del CSV, solo que, en la ventana de combinar, hay que seleccionar la tabla u hoja que tienen en común todos los archivos.**
+
+![alt text](/img/image_17.png)
 
 
  > Un dato para tener en cuenta, es que cada vez que se importe una carpeta con archivos de Excel, sólo se puede seleccionar una tabla o una hoja. De tal manera, que si cada archivo contiene dos o más tablas o dos o más hojas que se quieren volcar a una misma tabla, habrá que realizar tantas veces la importación de una carpeta como tablas u hojas de cada libro se deseen importar. 
@@ -628,3 +630,23 @@ Importar las tablas: T_ESPAÑA, T_FRANCIA Y T_ITALIA del fichero BD CURSO POR PA
 4. Asignar un tipo de dato número entero a la columna DIAS PLAZO PAGO.
 5. Crear una nueva columna personalizado con el nombre: FECHA PAGO, cuyo valor será: FECHA CURSO + DIAS PLAZO PAGO. Darle un tipo de dato FECHA.
 6. Cargar en Power BI sólo la tabla: TOTAL CURSOS PAISES
+
+### Ejercicio 010
+
+En la carpeta gastos mensuales y dptos, tenemos en diferentes ficheros, los gastos de los meses de: septiembre, octubre y noviembre. En cada fichero hay dos hojas con una tabla en cada una de ellas: T_COMERCIAL y T_CONTABILIDAD. En la tabla T_COMERCIAL están los gastos de empleados del departamento comercial de cada mes y en T_CONTABILIDAD los gastos de los empleados del departamento de contabilidad de cada mes.
+
+Queremos juntar los gastos de los 3 meses de ambos departamentos en una misma tabla, para ello:
+
+1. Importar de la carpeta GASTOS MENSUALES Y DPTOS la tabla T_COMERCIAL, y nombrar la tabla importada como GASTOS COMERCIAL.
+2. Importar de la carpeta GASTOS MENSUALES Y DPTOS la tabla T_CONTABILIDAD y nombrar la tabla importada como GASTOS CONTABILIDAD.
+3. Anexar las tablas GASTOS COMERCIAL y GASTOS CONTABILIDAD a una nueva tabla con el nombre: GASTOS TOTALES.
+4. Cargar en Power BI sólo la tabla GASTOS TOTALES.
+5. Insertar en la vista informe de Power BI una matriz que muestre:
+    - FILA: MES (de la jerarquía de la fecha gasto).
+    - COLUMNA: DEPARTAMENTO.
+    - VALORES: RECUENTO DE NUM GASTO.
+6. Insertar en la carpeta GASTOS MENSUALES Y DPTOS el fichero GASTOS DIC.
+7. Volver a Power BI y actualizar los datos.
+Si todo está correcto, se mostrarán los gastos del mes de diciembre en cada departamento.
+
+> se importan la carpeta + combinar y transformar, donde se selecciona solo una de las tablas
