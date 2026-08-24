@@ -435,6 +435,81 @@ Ejemplo:
 ![alt text](/img//image_6.png)
 
 > Para hacer sumas o restas de días sobre fechas, primero se pasa número y luego, se convierte a fecha nuevamente.
+
+## Importar carpetas
+
+Se usara la importación de carpetas, cuando se tenga ficheros recurrentes que contengan la misma gestión de datos.
+
+Se guardarán todos los archivos mensuales en una misma carpeta y se importara la propia carpeta.
+
+La importación de una carpeta funciona con archivos de Excel y con ficheros CSV fundamentalmente. Es aconsejable, que en la carpeta se guarden únicamente los archivos exactos que se quieren llevar a la misma tabla. No obstante, si aparte de estos ficheros, se encuentran otros que no tienen que ver con el motivo de la importación de la carpeta, ésta se puede realizar, pero se haría más complicado y podría no devolver el resultado esperado.
+
+> La importación de una carpeta funciona con archivos de Excel y con ficheros CSV fundamentalmente. Es aconsejable, que en la carpeta se guarden únicamente los archivos exactos que se quieren llevar a la misma tabla. No obstante, si aparte de estos ficheros, se encuentran otros que no tienen que ver con el motivo de la importación de la carpeta, ésta se puede realizar, pero se haría más complicado y podría no devolver el resultado esperado.
+
+![alt text](/img/image_7.png)
+
+
+***¿Cómo importarla?***
+
+Para realizar la importación de dicha carpeta, se puede hacer tanto desde Power BI como desde Power Query. 
+
+En este caso, desde la FICHA INICIO, se pulsa el desplegable del botón obtener datos con sus respectivas opcionas
+
+![alt text](/img/image_8.png)
+
+Se selecciona la ultima opción más
+
+![alt text](/img/image_9.png)
+
+Se muestra el cuadro del diálogo, que hay que poner la ruta en la carpeta
+
+![alt text](/img/image_10.png)
+
+Se muestra una ventana con todos los ficheros que tiene la carpeta dentro. Para terminar con la importación, se pulsa el botón Transformar datos, para acceder a Power Query
+
+![alt text](/img/image_10.png)
+
+![alt text](/img/image_11.png)
+
+En la columna Extension, como en la carpeta, hay ficheros de Excel y CSV, y si la idea es importar únicamente los CSV, filtraremos para dejar sólo los archivos CSV seleccionados.
+
+Si hubiera ficheros CSV que no se quisieran importar (opción nada recomendable) habría que filtrar por la columna Name, para poder dejar sólo aquellos que interese importar. 
+![alt text](/img/image_12.png)
+
+Finalmente, una vez que ya están seleccionados los archivos, en la columna Content, se pulsa el botón Combinar Archivos: 
+![alt text](/img/image_13.png)
+
+Finalmente, pulsando el botón ACEPTAR de la ventana, en el panel de consultas aparecen diferentes procesos y en última posición la tabla, Gastos Mensuales, que coge el mismo nombre de la carpeta importada. En cualquier momento se puede cambiar el nombre de la tabla. 
+
+![alt text](/img/image_14.png)
+
+Si la carpeta importada, cambia de ubicación, podemos actualizar la ruta en el paso Origen de la tabla o bien en la ficha inicio, en el botón Configuración de origen de datos. 
+
+> Una vez se agreguen nuevos ficheros y actualicemos, los cambios se veran reflejados
+
+### Importar carpetas de ficheros de excel
+
+Para importar ficheros de Excel guardados en la misma carpeta, la tabla u hoja que se seleccione de cada fichero para importar ha de tener el mismo nombre, no sólo con los mismos caracteres, sino que también han de coincidir las mayúsculas y minúsculas, aunque no tienen por qué tener el mismo orden en cada uno de ellos. Puede haber ficheros que tengan columnas que otros no tienen, no es ningún problema, ya que en esas columnas el dato lo tendrán los registros de los archivos que cuenta con dichas columnas y los archivos que no, el registro vendrá nulo. 
+
+Se importa la carpeta, de la forma anterior y cuando se presiona el botón combinar se muestra:
+- Combinar: Se dirige a la ventana de combinar para seleccionar el nombre de la tabla u hoja que ha de importar de cada archivo y posteriormente va al editor de Power Query.
+
+- Combinar y cargar: Se dirige a la ventana de combinar para seleccionar el nombre de la tabla u hoja que ha de importar de cada archivo y después irá directamente a cargarla a Power BI.
+
+![alt text](/img/image_15.png)
+ 
+se selecciona la opción Combinar y transformar datos:
+
+![alt text](/img/image_16.png)
+
+La importación se realiza exactamente igual que la del CSV, solo que, en la ventana de combinar, hay que seleccionar la tabla u hoja que tienen en común todos los archivos. 
+
+
+ > Un dato para tener en cuenta, es que cada vez que se importe una carpeta con archivos de Excel, sólo se puede seleccionar una tabla o una hoja. De tal manera, que si cada archivo contiene dos o más tablas o dos o más hojas que se quieren volcar a una misma tabla, habrá que realizar tantas veces la importación de una carpeta como tablas u hojas de cada libro se deseen importar. 
+>
+>Esto lo que haría sería generar tantas tablas en Power Query como importaciones de carpetas se hayan realizado. Para que luego todas estén en una misma tabla, habría que consolidarlas mediante la orden anexar consultas. 
+
+
 ## Prácticas
 
 ### Ejercicio 001
