@@ -564,8 +564,9 @@ Con el modelo de datos estrella se reduce la cantidad de relaciones y se simplif
 
 También, en este modelo de datos, se realizarán los filtros de manera unidireccional, es decir, desde las tablas de dimensiones se aplicarán los filtros a la tabla de hechos. 
 "
+La estructura del modelo de datos estrella, es el que se realizo en el ejercicio 011
 
-
+![alt text](/img/image_18.png)
 
 ## Prácticas
 
@@ -705,3 +706,16 @@ Queremos juntar los gastos de los 3 meses de ambos departamentos en una misma ta
 Si todo está correcto, se mostrarán los gastos del mes de diciembre en cada departamento.
 
 > se importan la carpeta + combinar y transformar, donde se selecciona solo una de las tablas
+
+### Ejercicio 011
+
+En el MODELO DATOS CURSOS tenemos 4 tablas:
+
+* T_CURSOS: tabla que tiene la gestión principal donde se guardar los diferentes cursos que la empresa imparte.
+* T_MATERIAS: tabla que aporta información a la tabla T_CURSOS de las materias impartidas en cada curso registrado.
+* T_CLIENTES: tabla que aporta información a la tabla T_CURSOS sobre los clientes a los que se les imparte cada curso.
+* T_PROFESORES: tabla que aporta información a la tabla T_CURSOS sobre los profesores que imparten cada uno de los cursos.
+
+Importar las tablas: T_CURSOS, T_MATERIAS, T_CLIENTES y T_PROFESORES del fichero MODELO DATOS CURSOS y cargar los datos directamente en Power BI.
+
+Ir a la vista modelo y crear las 3 relaciones a través de las columnas que se vean como coincidentes de cada tabla.
