@@ -687,6 +687,21 @@ La función RELATED sólo se utiliza en la tabla de hechos y siempre para llamar
     
     Cálculos dinámicos, que se realizan en función de los filtros que posea el informe (segun el contexto del filtradi). No se almacena fisicamente en el modelo, solo se alojan en las tablas y se calculan sobre los informes donde se agregaron.
 
+
+"
+Algunas funciones DAX que pueden resultar interesantes para cálculos de columnas son: 
+
+* BLANK: devuelve un valor en blanco que se usa como equivalente a nulo en DAX. 
+* ISBLANK: comprueba si un valor es en blanco y devuelve verdadero o falso. 
+* DIVIDE: realiza una división entre dos valores y, a diferencia del operador de división estándar, permite especificar un valor alternativo en caso de que el divisor sea cero o esté en blanco. 
+* SWITCH: evalúa una expresión y devuelve un resultado de una lista de posibles valores, simplificando estructuras condicionales múltiples. 
+Un apunte importante cuando calculamos una columna, es que el resultado que asignemos a todos los valores de la columna, bien sea numérico o bien texto, no se pueden mezclar tipos de dato en el cálculo. 
+
+El valor en blanco que devuelve la función BLANK es un valor neutro que se puede utilizar tanto con números como con texto. 
+
+Más funciones DAX
+https://learn.microsoft.com/es-es/dax/dax-function-referenceLinks to an external site. 
+"
 ## Prácticas
 
 ### Ejercicio 001
