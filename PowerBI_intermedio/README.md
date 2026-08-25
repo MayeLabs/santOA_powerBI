@@ -936,3 +936,14 @@ En la tabla T_CURSOS crear las siguientes columnas calculadas:
 * TOTAL CLIENTE: DURACION CURSO (T_CURSOS) * TARIFA CLIENTE (T_CLIENTES)
 * TOTAL PROFE: DURACION CURSO (T_CURSOS) * TARIFA PROFE (T_PROFESORES)
 * BENEFICIO CURSO: TOTAL CLIENTE (T_CURSOS) – TOTAL PROFE (T_CURSOS)
+
+
+### Ejercicio 014
+
+En la tabla T_CURSOS del fichero BD CURSOS, en la tabla MEDIDAS crear las siguientes medidas:
+* TOTAL CURSOS: contar las filas de la tabla T_CURSOS
+* NUMERO CURSOS: contar el número de elemento diferentes del campo CURSOS.
+* MEDIA TOTAL CLIENTE POR NUM CURSOS: dividir TOTAL CLIENTE entre NUMERO CURSOS 
+
+con la función DIVIDE y en caso de dar cero que muestre el valor blanco o nulo.
+Agregar las medidas a la tabla del cliente que hemos insertado.
