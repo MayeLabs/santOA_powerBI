@@ -688,6 +688,42 @@ La función RELATED sólo se utiliza en la tabla de hechos y siempre para llamar
     Cálculos dinámicos, que se realizan en función de los filtros que posea el informe (segun el contexto del filtradi). No se almacena fisicamente en el modelo, solo se alojan en las tablas y se calculan sobre los informes donde se agregaron.
 
 
+Para calcular medidas usamos funciones que totalicen los campos de una tabla. 
+
+Vamos a ver algunas funciones DAX simples para el cálculo de medidas que totalicen campos de una tabla: 
+
+* SUM: devuelve la suma de todos los valores numéricos de una columna. 
+* COUNT: devuelve el número de elementos de una columna que no están vacíos. 
+* AVERAGE: devuelve el promedio aritmético de los valores numéricos de una columna. 
+* MAX: devuelve el valor más alto dentro de una columna. 
+* MIN: devuelve el valor más bajo dentro de una columna. 
+* DISTINCTCOUNT: devuelve el número de valores únicos diferentes en una columna. 
+* COUNTROWS: devuelve el número de filas de una tabla. 
+
+**¿Cómo hacerlo?**
+
+ Ir a la FICHA HERRAMIENTAS DE TABLAS, al grupo de botones CÁLCULOS y seleccionamos NUEVA MEDIDA
+
+![alt text](/img/image_22.png)
+
+> La medida se cálcula más rapido que cualquier campo de la tabla
+
+#### Crear tablas de medidas
+Es usual alojar las medidad en tablas especiales para ellas, y así tenerlas mejor organizadas.
+
+1. Accedemos a la FICHA INICIO y en el grupo de botones DATOS, pulsamos el botón INTRODUCIR DATOS: 
+
+![alt text](/img/image_23.png)
+
+2. No agregar columnas ni filas o registros, simplemente la cambiamos de nombre, por ejemplo MEDIDAS. Pulsamos el botón CARGAR
+
+![alt text](/img/image_24.png)
+
+Si deseamos mover una medida a la tabla, entonces, Nos vamos a la FICHA HERRAMIENTAS DE MEDICION al grupo de botones ESTRUCTURA y en el área TABLA INICIAL, seleccionamos la tabla MEDIDAS: 
+
+![alt text](/img/image_25.png)
+
+
 "
 Algunas funciones DAX que pueden resultar interesantes para cálculos de columnas son: 
 
