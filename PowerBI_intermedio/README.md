@@ -645,6 +645,47 @@ Existen diferentes escenarios en los que la mejor opción sería combinar consul
 * Si el modelo de datos que se va a generar es un modelo de datos copo de nieve, no sería óptimo para trabajar con él en Power BI, por lo que se debe transformar en un modelo de datos estrella.
 * Si la tabla de dimensiones sólo aporta un único campo con valor a la tabla de hechos. "
 
+## Cálculos DAX
+
+DAX (Data Analysis Expressions) es el lunguaje usado para crear calculos personalizados, que va más alla de las funcionalidades básicas de las tablas y gráficos. Con DAX podemos obtener información más precisa, realizar análisis complejos y adaptar los resultados a necesidades del informe.
+
+Vemos dos tipo de calculo de DAX:
+
+### Columnas calculadas
+
+    Cuando añadimos un nuevo campo a una tabla existente, *su valor se calcula fila por fila en función de otras columnas o expresiones. Estas columna se almacena en el modelo de datos y se actualiza cada vez que se cargan los datos
+
+Una columna calculada, no aparece en Power Query, sino en Power BI, por lo que no se le pueden aplicar transformaciones. Además a diferencia de columnas personalizadas, podemos hacer el calculo con el campo de una o de diferentes tablas.
+
+**¿Cómo hacerlo?**
+
+1. Lo primero que hacemos es seleccionar en el panel de datos la tabla en la que vamos a crear la columna calculada: 
+
+![alt text](/img/image_19.png)
+
+
+2. Ir a la  FICHA HERRAMIENTAS DE TABLAS, al grupo de botones CÁLCULOS y seleccionamos el botón NUEVA COLUMNA
+
+![alt text](/img/image_20.png)
+
+
+> Tenemos que escribir la fórmula que aplicaremos a la columna. Hay que tener en cuenta que los campos a los que vamos a llamar en la fórmula hay que escribirlos desde el teclado y no se pueden seleccionar con el ratón. 
+
+**¿Cómo crear una columna calculada en un modelo de datos con tablas relacionadas y seleccionando columnas de diferentes tablas?**
+
+tenemos que utilizar la función DAX: RELATED que se utiliza cuando hacemos un cálculo en la tabla de hechos y queremos seleccionar un campo de una de las tablas de dimensiones. 
+
+Sin embargo, cuando seleccionamos campos de la propia tabla de hechos en la que estamos calculando la columna NO se debe utilizar dicha función RELATED. 
+
+La función RELATED sólo se utiliza en la tabla de hechos y siempre para llamar a campos de las tablas de dimensiones. Para usarla es imprescindible que las tablas estén relacionadas. 
+
+![alt text](/img/image_21.png)
+
+
+
+### Medidas
+    
+    Cálculos dinámicos, que se realizan en función de los filtros que posea el informe (segun el contexto del filtradi). No se almacena fisicamente en el modelo, solo se alojan en las tablas y se calculan sobre los informes donde se agregaron.
 
 ## Prácticas
 
@@ -828,3 +869,4 @@ Ir a la vista informes e insertar una matriz que muestre:
 Insertar una segmentación y agregarla el campo NOMBRE DPTO de la tabla T_EMPLEADOS.
 
 Filtrar por el departamento: COMERCIAL.
+
