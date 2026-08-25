@@ -738,6 +738,87 @@ El valor en blanco que devuelve la función BLANK es un valor neutro que se pued
 Más funciones DAX
 https://learn.microsoft.com/es-es/dax/dax-function-referenceLinks to an external site. 
 "
+
+## Publicar modelos de datos en power BI Services
+ 
+Los informes se pueden publicar en el servicio web de Power BI.
+
+Desde el Power BI Services, se pueden compartir informes con otros usuarios de la organización o bien de fuera, dependiendo del tipo de licencia que se disponga.
+
+También, los informes publicados en el servicio web, se pueden ver en dispositivos móviles: móvil y tablet, teniendo instalada la app de Power BI y estando logados con nuestro usuario y contraseña de office 365.
+
+***¿Cómo accedo al servicio web de power BI?***
+
+Para acceder, en el navegador de internet, habrá que ir a la web: https://www.office.com/, una vez se ingresa, se accede al panel izquierdo y seleccionamos APLICACIONES > TODAS LAS APLICACIONES > Acceder a POWER BI services
+
+Cualquier publicación que se realice en el servicio web de power BI, tiene que hacerce dentro de un area de trabajo, que es donde se ven almacenados loas archivos publicos de Power BI.
+
+***Área de trabajo***
+
+Para acceder en el panel izquierdo, presionamos el botón  Áreas de trabajo, que muestra las áreas de trabajo creadas en el espacio web.
+
+Por defecto, se tendrá unicamente el área: Mi área de trabajo. Para poder crear nuevas áreas de trabajo, se necesita licencia PRO o PREMIUM.
+
+Para crear una nueva área de trabajo, yna vez pulsamos en el panel izquierdo el botón AREAS DE TRABAJO en la parte inferior pulsamos el botón NUEVA ÁREA DE TRABAJO
+
+### Publicar un fichero PBIX
+
+Para publicar un fichero PBIX, debe estar recientemente guradado. Se accesde a la FICHA INICIO al grupo de botones COMPARTIR, se pulsa el botón PUBLICAR.
+
+Una vez, se presione el botón publicar, se mostrara una ventana, donde se debe seleccionar el área de trabajo y pulsar el botón ENTENDIDO.
+
+El fichero publicado se podra observar accediendo al área de trabajo, con dos iconos uno de ellos son las barras de power BI, que es , el que se puede utilizar y visualizar. Por otra parte, el icono de puntos es el modelo semántico, y guarda todos los datos y transformaciones. Este no se puede modificar, para ello usar la app de escritorio.
+
+Al realizar cambios, se debe volver a publicar el archivo PBIX para que el modelo semánticos coja los cambios.
+
+### Actualizar los datos en Power BI Services
+
+1. Se actualización de forma manual
+- **Qué hace**: Refresca los datos del modelo semántico con los cambios del origen.
+- **Cuándo usarlo**: Cuando solo necesitas una actualización puntual.
+- **Pasos**: Power BI Services → Modelo semántico → **Actualizar ahora**.
+
+2. Para que se pueda actualizar se debe tener una **puerta de enlace**
+
+Instalar puerta de enlace (solo 1 vez)
+- **¿Para qué?**: Es el **puente de conexión** entre Power BI Services (nube) y tus datos locales (Excel, SQL, etc.).
+- **Sin ella**: Power BI no puede acceder a los datos que no están en la nube.
+- **Pasos**: Modelo semántico → **Programar actualizaciones** → **CONEXIONES DE PUERTA DE ENLACE Y NUBE** → **INSTALAR PUERTA DE ENLACE**.
+
+3. Configurar credenciales
+- **¿Para qué?**: Autoriza a Power BI a **acceder a los datos de origen** con tu identidad de Office 365.
+- **Nivel de privacidad**: Define qué permisos tiene Power BI sobre los datos (None = acceso total sin restricciones).
+- **Pasos**: **CREDENCIALES DE ORIGEN DE DATOS** → **EDITAR CREDENCIALES** → elegir nivel → **INICIAR SESIÓN**.
+
+4. Programar actualizaciones automáticas
+- **¿Para qué?**: Para que el modelo se actualice solo (ej: cada día a las 8 am) sin intervención manual.
+- **Requisito clave**: El archivo origen debe estar en **OneDrive/SharePoint** para que la nube lo lea directamente (sin depender de tu PC encendido).
+- **Pasos**: En **ACTUALIZAR** → definir frecuencia.
+
+Resumen
+| Paso | ¿Por qué? |
+|------|-----------|
+| **Actualizar ahora** | Refresco manual puntual |
+| **Puerta de enlace** | Conexión entre nube y datos locales |
+| **Credenciales** | Permiso de acceso a los datos |
+| **Programar** | Automatizar el refresco (requiere origen en nube) |
+
+###  Ver los informes publicados
+
+Para poder ver los informes que hemos publicado del fichero PBIX, en el área de trabajo, se pulsa sobre el nombre el fichero situado a la derecha del icono de informes.
+
+En el área de trabajo, se vera en la parte izquierda de laventana están las páginas que contenía el informe publicado. 
+
+* Se pueden utilizar los filtros e interacciones de informes de la misma forma que en la aplicación de escritorio, donde funcionarán exactamente igual que en la aplicación de escritorio junto con los marcadores que se hayan establecido. 
+
+* Para mostrar el panel de marcadores en la barra superior en la parte derecha, pulsamos el botón de MARCARDORES
+
+* Se pueden realizar cambios, que se editan y se guardan.
+
+* Para volver al modo lectura inicial del infome, pulsar el botón VISTA DE LA LECTURA.
+
+> Los cambios realizados en el servicio WEB no afectan al fichero de la aplicación de escritorio y viserversa, para que el de escritorio actualice los datos WEB, habría que publicar nuevamente el fichero PBIX.
+
 ## Prácticas
 
 ### Ejercicio 001
